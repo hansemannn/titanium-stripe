@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: titanium-stripe is a Swift based Titanium module.
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2020 by Your Company
+
+# these should not be edited
+name: titanium-stripe
+moduleid: ti.stripe
+guid: 8a8da6b4-4dab-4c18-9439-de2e14457a1c
+platform: iphone
+minsdk: 8.3.2
