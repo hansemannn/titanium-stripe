@@ -17,6 +17,8 @@ class TiStripeModule: TiModule {
   
   var customerContext: STPCustomerContext?
   
+  var ephemeralKeyAPIURL: String?
+  
   func moduleGUID() -> String {
     return "8a8da6b4-4dab-4c18-9439-de2e14457a1c"
   }
@@ -25,13 +27,15 @@ class TiStripeModule: TiModule {
   func initialize(args: [Any]?) {
     guard let args = args, let params = args.first as? [String: Any] else { return }
 
-    customerContext = STPCustomerContext(keyProvider: self)
-    paymentContext = STPPaymentContext(customerContext: customerContext!)
-
     guard let publishableKey = params["publishableKey"] as? String, let companyName = params["companyName"] as? String else { return }
+    
+    ephemeralKeyAPIURL = params["ephemeralKeyAPIURL"] as? String
 
     STPPaymentConfiguration.shared().companyName = companyName
     STPAPIClient.shared().publishableKey = publishableKey
+
+    customerContext = STPCustomerContext(keyProvider: self)
+    paymentContext = STPPaymentContext(customerContext: customerContext!)
     
     if let styles = params["styles"] as? [String: Any] {
       if let primaryBackgroundColor = styles["primaryBackgroundColor"] {
@@ -49,7 +53,6 @@ class TiStripeModule: TiModule {
     }
 
     paymentContext?.delegate = self
-    paymentContext?.hostViewController = TiApp().controller.topPresentedController()
   }
   
   @objc(updatePaymentDetails:)
@@ -70,6 +73,7 @@ class TiStripeModule: TiModule {
 
   @objc(showPaymentOptions:)
   func showPaymentOptions(args: [Any]?) {
+    paymentContext?.hostViewController = UIApplication.shared.keyWindow?.rootViewController
     paymentContext?.presentPaymentOptionsViewController()
   }
   
@@ -80,34 +84,25 @@ class TiStripeModule: TiModule {
 }
 
 extension TiStripeModule: STPCustomerEphemeralKeyProvider {
+
   func createCustomerKey(withAPIVersion apiVersion: String, completion: @escaping STPJSONResponseCompletionBlock) {
-    // TODO: Generate ephemeral key online and pass result here
-    completion([:], nil)
-    
-    //
-    //    let endpoint = "/api/passengers/me/ephemeral_keys"
-    //
-    //    guard
-    //        !baseURLString.isEmpty,
-    //        let baseURL = URL(string: baseURLString),
-    //        let url = URL(string: endpoint, relativeTo: baseURL) else {
-    //            completion(nil, CustomerKeyError.missingBaseURL)
-    //            return
-    //    }
-    //
-    //    let parameters: [String: Any] = ["api_version": apiVersion]
-    //
-    //    Alamofire.request(url, method: .post, parameters: parameters).responseJSON { (response) in
-    //        guard let json = response.result.value as? [AnyHashable: Any] else {
-    //            completion(nil, CustomerKeyError.invalidResponse)
-    //            return
-    //        }
-    //
-    //        completion(json, nil)
-    //    }
+    var urlRequest = URLRequest(url: URL(string: ephemeralKeyAPIURL!)!)
+    urlRequest.httpMethod = "POST"
+    urlRequest.httpBody = try! JSONSerialization.data(withJSONObject: ["api_version": apiVersion], options: .fragmentsAllowed)
+
+    let session = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+      guard let data = data, error == nil else {
+        completion(nil, error)
+        return
+      }
+      guard let json = try! JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [AnyHashable: Any] else {
+        completion(nil, error)
+        return
+      }
+      completion(json, nil)
+    }
+    session.resume()
   }
-  
-  
 }
 
 // MARK: STPPaymentContextDelegate
