@@ -6,13 +6,13 @@ version: 3.0.0
 apiversion: 4
 architectures: arm64-v8a armeabi-v7a x86
 description: titanium-stripe
-author: Your Name
-license: Specify your license
-copyright: Copyright (c) 2020 by Your Company
+author: Hans Knoechel
+license: UNLICENSED
+copyright: Copyright (c) 2020 by Hans Knoechel
 
 # these should not be edited
 name: titanium-stripe
 moduleid: ti.stripe
 guid: 8a8da6b4-4dab-4c18-9439-de2e14457a1c
 platform: android
-minsdk: 8.3.2
+minsdk: 9.0.0
