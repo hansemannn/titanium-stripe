@@ -34,39 +34,15 @@ public class TitaniumStripeModule extends KrollModule {/* implements EphemeralKe
 		ephemeralKeyAPIURL = params.getString("ephemeralKeyAPIURL");
 		PaymentConfiguration.init(TiApplication.getInstance().getApplicationContext(), publishableKey);
 	}
-/*
-	@Override
-    public void createEphemeralKey(
-            @NonNull @Size(min = 4) String apiVersion,
-            @NonNull final EphemeralKeyUpdateListener keyUpdateListener) {
-	// RequestQueue queue = Volley.newRequestQueue(this);
-	
-		// StringRequest stringRequest = new StringRequest(Request.Method.POST, ephemeralKeyAPIURL,
-		// 		new Response.Listener<String>() {
-		// 			@Override
-		// 			public void onResponse(String response) {
-		// 				keyUpdateListener.onKeyUpdate(response);	
-		// 			}
-		// 		}, new Response.ErrorListener() {
-		// 	@Override
-		// 	public void onErrorResponse(VolleyError error) {
-		// 		keyUpdateListener.onKeyUpdate(null);	
-		// 	}
-		// }){
-		// 	@Override
-		// 	public byte[] getBody() throws AuthFailureError {
-		// 		ObjectMapper objectMapper = new ObjectMapper();
-		// 		final Map<String, String> apiParamMap = new HashMap<>();
-		// 		apiParamMap.put("api_version", apiVersion);
-		// 		String json = objectMapper.writeValueAsString(elements);
-		
-		// 		return json.getBytes();
-		// 	}
-		// };
-		// // Add the request to the RequestQueue.
-		// queue.add(stringRequest);
-		// requestQueue.start();
+
+	@Kroll.method
+	public void updatePaymentDetails(KrollDict params) {
+		// TODO
 	}
-	*/
+
+	@Kroll.method
+	public void requestPayment(KrollDict params) {
+		// TODO
+	}
 }
 
