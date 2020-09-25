@@ -9,59 +9,64 @@
 package ti.stripe;
 
 import org.appcelerator.kroll.KrollModule;
+import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.annotations.Kroll;
 
 import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.kroll.common.Log;
 import org.appcelerator.kroll.common.TiConfig;
 
+import com.stripe.android.PaymentConfiguration;
+import com.stripe.android.EphemeralKeyProvider;
 
 @Kroll.module(name="TitaniumStripe", id="ti.stripe")
-public class TitaniumStripeModule extends KrollModule
-{
+public class TitaniumStripeModule extends KrollModule {/* implements EphemeralKeyProvider {*/
 
 	// Standard Debugging variables
 	private static final String LCAT = "TitaniumStripeModule";
 	private static final boolean DBG = TiConfig.LOGD;
 
-	// You can define constants with @Kroll.constant, for example:
-	// @Kroll.constant public static final String EXTERNAL_NAME = value;
-
-	public TitaniumStripeModule()
-	{
-		super();
-	}
-
-	@Kroll.onAppCreate
-	public static void onAppCreate(TiApplication app)
-	{
-		Log.d(LCAT, "inside onAppCreate");
-		// put module init code that needs to run when the application is created
-	}
-
-	// Methods
-	@Kroll.method
-	public String example()
-	{
-		Log.d(LCAT, "example called");
-		return "hello world";
-	}
-
-	// Properties
-	@Kroll.method
-	@Kroll.getProperty
-	public String getExampleProp()
-	{
-		Log.d(LCAT, "get example property");
-		return "hello world";
-	}
-
+	private String ephemeralKeyAPIURL = "";
 
 	@Kroll.method
-	@Kroll.setProperty
-	public void setExampleProp(String value) {
-		Log.d(LCAT, "set example property: " + value);
+	public void initialize(KrollDict params) {
+		String publishableKey = params.getString("publishableKey");
+		ephemeralKeyAPIURL = params.getString("ephemeralKeyAPIURL");
+		PaymentConfiguration.init(TiApplication.getInstance().getApplicationContext(), publishableKey);
 	}
-
+/*
+	@Override
+    public void createEphemeralKey(
+            @NonNull @Size(min = 4) String apiVersion,
+            @NonNull final EphemeralKeyUpdateListener keyUpdateListener) {
+	// RequestQueue queue = Volley.newRequestQueue(this);
+	
+		// StringRequest stringRequest = new StringRequest(Request.Method.POST, ephemeralKeyAPIURL,
+		// 		new Response.Listener<String>() {
+		// 			@Override
+		// 			public void onResponse(String response) {
+		// 				keyUpdateListener.onKeyUpdate(response);	
+		// 			}
+		// 		}, new Response.ErrorListener() {
+		// 	@Override
+		// 	public void onErrorResponse(VolleyError error) {
+		// 		keyUpdateListener.onKeyUpdate(null);	
+		// 	}
+		// }){
+		// 	@Override
+		// 	public byte[] getBody() throws AuthFailureError {
+		// 		ObjectMapper objectMapper = new ObjectMapper();
+		// 		final Map<String, String> apiParamMap = new HashMap<>();
+		// 		apiParamMap.put("api_version", apiVersion);
+		// 		String json = objectMapper.writeValueAsString(elements);
+		
+		// 		return json.getBytes();
+		// 	}
+		// };
+		// // Add the request to the RequestQueue.
+		// queue.add(stringRequest);
+		// requestQueue.start();
+	}
+	*/
 }
 

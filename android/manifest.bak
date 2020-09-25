@@ -2,9 +2,9 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 3.0.0
-apiversion: 4
-architectures: arm64-v8a armeabi-v7a x86
+version: 2.0.0
+apiversion: 3
+architectures: arm64-v8a armeabi-v7a x86 x86_64
 description: titanium-stripe
 author: Your Name
 license: Specify your license
@@ -15,4 +15,4 @@ name: titanium-stripe
 moduleid: ti.stripe
 guid: 8a8da6b4-4dab-4c18-9439-de2e14457a1c
 platform: android
-minsdk: 8.3.2
+minsdk: 8.0.0
