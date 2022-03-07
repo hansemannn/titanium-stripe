@@ -29,14 +29,14 @@ function initialize() {
 
 function updatePaymentDetails() {
     Stripe.updatePaymentDetails({
-        currency: 'EUR',
-        country: 'DE',
+        currency: 'USD',
+        country: 'US',
         items: [{
-            label: 'Einkauf für Hans',
-            amount: 12.50
+            label: 'Apples & Oranges',
+            amount: 6.50
         }, {
-            label: 'Abwicklungsgebühr (1.9% + 0.25€',
-            amount: 0.49
+            label: 'Beer & Fuse',
+            amount: 9.99
         }]
     });
 }

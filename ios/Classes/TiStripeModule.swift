@@ -8,6 +8,7 @@
 
 import Stripe
 import TitaniumKit
+import PassKit
 import UIKit
 
 @objc(TiStripeModule)
@@ -31,24 +32,24 @@ class TiStripeModule: TiModule {
     
     ephemeralKeyAPIURL = params["ephemeralKeyAPIURL"] as? String
 
-    STPPaymentConfiguration.shared().companyName = companyName
-    STPAPIClient.shared().publishableKey = publishableKey
+    STPPaymentConfiguration.shared.companyName = companyName
+    STPAPIClient.shared.publishableKey = publishableKey
 
     customerContext = STPCustomerContext(keyProvider: self)
     paymentContext = STPPaymentContext(customerContext: customerContext!)
     
     if let styles = params["styles"] as? [String: Any] {
       if let primaryBackgroundColor = styles["primaryBackgroundColor"] {
-        STPTheme.default().primaryBackgroundColor = TiUtils.colorValue(primaryBackgroundColor)?.color
+        STPTheme.defaultTheme.primaryBackgroundColor = TiUtils.colorValue(primaryBackgroundColor)!.color
       }
       if let primaryForegroundColor = styles["primaryForegroundColor"] {
-        STPTheme.default().primaryForegroundColor = TiUtils.colorValue(primaryForegroundColor)?.color
+        STPTheme.defaultTheme.primaryForegroundColor = TiUtils.colorValue(primaryForegroundColor)!.color
       }
       if let secondaryForegroundColor = styles["secondaryForegroundColor"] {
-        STPTheme.default().secondaryForegroundColor = TiUtils.colorValue(secondaryForegroundColor)?.color
+        STPTheme.defaultTheme.secondaryForegroundColor = TiUtils.colorValue(secondaryForegroundColor)!.color
       }
       if let accentColor = styles["accentColor"] {
-        STPTheme.default().accentColor = TiUtils.colorValue(accentColor)?.color
+        STPTheme.defaultTheme.accentColor = TiUtils.colorValue(accentColor)!.color
       }
     }
 

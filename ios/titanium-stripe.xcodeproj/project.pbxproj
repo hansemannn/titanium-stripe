@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A95C3A32439262E0075C4FB /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A95C3A22439262E0075C4FB /* Stripe.framework */; };
+		3AE8F71D27D61BAC004B9B1D /* Stripe3DS2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE8F71527D61BAC004B9B1D /* Stripe3DS2.xcframework */; };
+		3AE8F71E27D61BAC004B9B1D /* StripeIdentity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE8F71627D61BAC004B9B1D /* StripeIdentity.xcframework */; };
+		3AE8F71F27D61BAC004B9B1D /* StripeCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE8F71727D61BAC004B9B1D /* StripeCore.xcframework */; };
+		3AE8F72027D61BAC004B9B1D /* Stripe.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE8F71827D61BAC004B9B1D /* Stripe.xcframework */; };
+		3AE8F72127D61BAC004B9B1D /* StripeCardScan.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE8F71927D61BAC004B9B1D /* StripeCardScan.xcframework */; };
+		3AE8F72227D61BAC004B9B1D /* StripeUICore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE8F71A27D61BAC004B9B1D /* StripeUICore.xcframework */; };
+		3AE8F72327D61BAC004B9B1D /* StripeCameraCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE8F71B27D61BAC004B9B1D /* StripeCameraCore.xcframework */; };
+		3AE8F72427D61BAC004B9B1D /* StripeApplePay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE8F71C27D61BAC004B9B1D /* StripeApplePay.xcframework */; };
+		3AE8F72627D61BFD004B9B1D /* TitaniumKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE8F72527D61BFD004B9B1D /* TitaniumKit.xcframework */; };
 		DB34CDE0207B998A005F8E8C /* TiStripeModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34CDDE207B998A005F8E8C /* TiStripeModuleAssets.m */; };
 		DB34CDE1207B998A005F8E8C /* TiStripeModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = DB34CDDF207B998A005F8E8C /* TiStripeModuleAssets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB34CDE5207B9EBD005F8E8C /* Foundation.framework */; };
@@ -17,7 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A95C3A22439262E0075C4FB /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = platform/Stripe.framework; sourceTree = "<group>"; };
+		3AE8F71527D61BAC004B9B1D /* Stripe3DS2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Stripe3DS2.xcframework; path = platform/Stripe3DS2.xcframework; sourceTree = "<group>"; };
+		3AE8F71627D61BAC004B9B1D /* StripeIdentity.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripeIdentity.xcframework; path = platform/StripeIdentity.xcframework; sourceTree = "<group>"; };
+		3AE8F71727D61BAC004B9B1D /* StripeCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripeCore.xcframework; path = platform/StripeCore.xcframework; sourceTree = "<group>"; };
+		3AE8F71827D61BAC004B9B1D /* Stripe.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Stripe.xcframework; path = platform/Stripe.xcframework; sourceTree = "<group>"; };
+		3AE8F71927D61BAC004B9B1D /* StripeCardScan.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripeCardScan.xcframework; path = platform/StripeCardScan.xcframework; sourceTree = "<group>"; };
+		3AE8F71A27D61BAC004B9B1D /* StripeUICore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripeUICore.xcframework; path = platform/StripeUICore.xcframework; sourceTree = "<group>"; };
+		3AE8F71B27D61BAC004B9B1D /* StripeCameraCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripeCameraCore.xcframework; path = platform/StripeCameraCore.xcframework; sourceTree = "<group>"; };
+		3AE8F71C27D61BAC004B9B1D /* StripeApplePay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripeApplePay.xcframework; path = platform/StripeApplePay.xcframework; sourceTree = "<group>"; };
+		3AE8F72527D61BFD004B9B1D /* TitaniumKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TitaniumKit.xcframework; path = "$(TITANIUM_SDK)/iphone/Frameworks/TitaniumKit.xcframework"; sourceTree = "<group>"; };
 		DB34CDDE207B998A005F8E8C /* TiStripeModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiStripeModuleAssets.m; path = Classes/TiStripeModuleAssets.m; sourceTree = SOURCE_ROOT; };
 		DB34CDDF207B998A005F8E8C /* TiStripeModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiStripeModuleAssets.h; path = Classes/TiStripeModuleAssets.h; sourceTree = SOURCE_ROOT; };
 		DB34CDE5207B9EBD005F8E8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,8 +50,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE8F72027D61BAC004B9B1D /* Stripe.xcframework in Frameworks */,
+				3AE8F72227D61BAC004B9B1D /* StripeUICore.xcframework in Frameworks */,
+				3AE8F72427D61BAC004B9B1D /* StripeApplePay.xcframework in Frameworks */,
+				3AE8F72127D61BAC004B9B1D /* StripeCardScan.xcframework in Frameworks */,
+				3AE8F71D27D61BAC004B9B1D /* Stripe3DS2.xcframework in Frameworks */,
+				3AE8F72327D61BAC004B9B1D /* StripeCameraCore.xcframework in Frameworks */,
+				3AE8F71F27D61BAC004B9B1D /* StripeCore.xcframework in Frameworks */,
+				3AE8F72627D61BFD004B9B1D /* TitaniumKit.xcframework in Frameworks */,
 				DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */,
-				3A95C3A32439262E0075C4FB /* Stripe.framework in Frameworks */,
+				3AE8F71E27D61BAC004B9B1D /* StripeIdentity.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,8 +90,16 @@
 		DB34CDE2207B9D6A005F8E8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3AE8F71827D61BAC004B9B1D /* Stripe.xcframework */,
+				3AE8F71527D61BAC004B9B1D /* Stripe3DS2.xcframework */,
+				3AE8F71C27D61BAC004B9B1D /* StripeApplePay.xcframework */,
+				3AE8F71B27D61BAC004B9B1D /* StripeCameraCore.xcframework */,
+				3AE8F71927D61BAC004B9B1D /* StripeCardScan.xcframework */,
+				3AE8F71727D61BAC004B9B1D /* StripeCore.xcframework */,
+				3AE8F71627D61BAC004B9B1D /* StripeIdentity.xcframework */,
+				3AE8F71A27D61BAC004B9B1D /* StripeUICore.xcframework */,
+				3AE8F72527D61BFD004B9B1D /* TitaniumKit.xcframework */,
 				DB34CDE5207B9EBD005F8E8C /* Foundation.framework */,
-				3A95C3A22439262E0075C4FB /* Stripe.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,7 +171,7 @@
 		DB52E2211E9CCD7000AAAEE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					DB52E2291E9CCD7000AAAEE0 = {
 						CreatedOnToolsVersion = 8.3;
@@ -222,6 +254,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -249,9 +282,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -288,6 +321,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -309,10 +343,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
@@ -344,8 +379,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
@@ -387,8 +426,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = (

@@ -15,13 +15,10 @@ import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.annotations.Kroll;
 
 import org.appcelerator.titanium.TiApplication;
-import org.appcelerator.kroll.common.Log;
 import org.appcelerator.kroll.common.TiConfig;
-import org.jetbrains.annotations.NotNull;
 
 import com.stripe.android.CustomerSession;
 import com.stripe.android.PaymentConfiguration;
-import com.stripe.android.EphemeralKeyProvider;
 import com.stripe.android.PaymentSession;
 import com.stripe.android.PaymentSessionConfig;
 import com.stripe.android.PaymentSessionData;
