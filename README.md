@@ -11,7 +11,7 @@ Use the native Stripe SDK's (iOS/Android) in Titanium!
 
 ## Example
 
-See the [./example/app.js](app.js) for a detailed example.
+See the [app.js](./example/app.js) for a detailed example.
 
 ## Author
 
