@@ -6,6 +6,6 @@ framework module StripeCameraCore {
 }
 
 module StripeCameraCore.Swift {
-    header "StripeCameraCore-Swift.h"
-    requires objc
+  header "StripeCameraCore-Swift.h"
+  requires objc
 }

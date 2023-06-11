@@ -1,0 +1,702 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Stripe
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import Contacts
+import CoreLocation
+import Foundation
+import ObjectiveC
+import PassKit
+@_exported import Stripe
+@_exported @_spi(STP) import StripeApplePay
+@_exported @_spi(STP) import StripeCore
+@_exported @_spi(STP) import StripePayments
+@_exported @_spi(STP) import StripePaymentsUI
+@_spi(STP) import StripeUICore
+import Swift
+import SwiftUI
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+extension Stripe.STPBankSelectionMethod : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Stripe.STPBillingAddressFields : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Stripe.STPShippingStatus : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Stripe.STPShippingType : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension StripeCore.STPAPIClient {
+  @available(*, deprecated, message: "This initializer previously configured publishableKey and stripeAccount via the STPPaymentConfiguration instance. This behavior is deprecated; set the STPAPIClient configuration, publishableKey, and stripeAccount properties directly on the STPAPIClient instead.")
+  convenience public init(configuration: Stripe.STPPaymentConfiguration)
+}
+extension StripeCore.STPAPIClient {
+  @objc dynamic public var configuration: Stripe.STPPaymentConfiguration {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class STPAddCardViewController : Stripe.STPCoreTableViewController, StripePaymentsUI.STPPaymentCardTextFieldDelegate, UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc convenience dynamic public init()
+  @objc(initWithConfiguration:theme:) @_Concurrency.MainActor(unsafe) public init(configuration: Stripe.STPPaymentConfiguration, theme: Stripe.STPTheme)
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: Stripe.STPAddCardViewControllerDelegate?
+  @objc @_Concurrency.MainActor(unsafe) public var prefilledInformation: Stripe.STPUserInformation? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var customFooterView: UIKit.UIView? {
+    @objc get
+    @objc set(footerView)
+  }
+  @_Concurrency.MainActor(unsafe) public var apiClient: StripeCore.STPAPIClient
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc public func updateAppearance()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc public func handleCancelTapped(_ sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc public func paymentCardTextFieldDidChange(_ textField: StripePaymentsUI.STPPaymentCardTextField)
+  @_Concurrency.MainActor(unsafe) @objc public func paymentCardTextFieldWillEndEditing(forReturn textField: StripePaymentsUI.STPPaymentCardTextField)
+  @_Concurrency.MainActor(unsafe) @objc public func paymentCardTextFieldDidBeginEditingCVC(_ textField: StripePaymentsUI.STPPaymentCardTextField)
+  @_Concurrency.MainActor(unsafe) @objc public func paymentCardTextFieldDidEndEditingCVC(_ textField: StripePaymentsUI.STPPaymentCardTextField)
+  @_Concurrency.MainActor(unsafe) @objc public func paymentCardTextFieldDidBeginEditing(_ textField: StripePaymentsUI.STPPaymentCardTextField)
+  @_Concurrency.MainActor(unsafe) @objc public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @objc deinit
+}
+@objc public protocol STPAddCardViewControllerDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func addCardViewControllerDidCancel(_ addCardViewController: Stripe.STPAddCardViewController)
+  @objc func addCardViewController(_ addCardViewController: Stripe.STPAddCardViewController, didCreatePaymentMethod paymentMethod: StripePayments.STPPaymentMethod, completion: @escaping StripePayments.STPErrorBlock)
+  @available(*, deprecated, renamed: "addCardViewController(_:didCreatePaymentMethod:completion:)", message: "Use addCardViewController(_:didCreatePaymentMethod:completion:) instead and migrate your integration to PaymentIntents. See https://stripe.com/docs/payments/payment-intents/migration/charges#read")
+  @objc optional func addCardViewController(_ addCardViewController: Stripe.STPAddCardViewController, didCreateToken token: StripePayments.STPToken, completion: (Swift.Error?) -> Swift.Void)
+  @available(*, deprecated, renamed: "addCardViewController(_:didCreatePaymentMethod:completion:)", message: "Use addCardViewController(_:didCreatePaymentMethod:completion:) instead and migrate your integration to PaymentIntents. See https://stripe.com/docs/payments/payment-intents/migration/charges#read")
+  @objc optional func addCardViewController(_ addCardViewController: Stripe.STPAddCardViewController, didCreateSource source: StripePayments.STPSource, completion: (Swift.Error?) -> Swift.Void)
+}
+@_spi(STP) extension Stripe.STPAddCardViewController : StripeCore.STPAnalyticsProtocol {
+  @_spi(STP) @_Concurrency.MainActor(unsafe) public static let stp_analyticsIdentifier: Swift.String
+}
+@objc public enum STPBillingAddressFields : Swift.UInt {
+  case none
+  case postalCode
+  case full
+  case name
+  @available(*, deprecated, message: "Use STPBillingAddressFields.postalCode instead")
+  case zip
+  public init?(rawValue: Swift.UInt)
+  public typealias RawValue = Swift.UInt
+  public var rawValue: Swift.UInt {
+    get
+  }
+}
+extension StripePayments.STPAddress {
+  @objc dynamic public func containsRequiredFields(_ requiredFields: Stripe.STPBillingAddressFields) -> Swift.Bool
+  @objc(containsContentForBillingAddressFields:) dynamic public func containsContent(for desiredFields: Stripe.STPBillingAddressFields) -> Swift.Bool
+  @objc dynamic public func containsRequiredShippingAddressFields(_ requiredFields: Swift.Set<StripePayments.STPContactField>?) -> Swift.Bool
+  @objc dynamic public func containsContent(forShippingAddressFields desiredFields: Swift.Set<StripePayments.STPContactField>?) -> Swift.Bool
+  @objc(applePayContactFieldsFromBillingAddressFields:) dynamic public class func applePayContactFields(from billingAddressFields: Stripe.STPBillingAddressFields) -> Swift.Set<PassKit.PKContactField>
+  @objc dynamic public class func pkContactFields(fromStripeContactFields contactFields: Swift.Set<StripePayments.STPContactField>?) -> Swift.Set<PassKit.PKContactField>?
+}
+@_spi(STP) public protocol PaymentAnalytic : StripeCore.Analytic {
+  @_spi(STP) var productUsage: Swift.Set<Swift.String> { get }
+  @_spi(STP) var additionalParams: [Swift.String : Any] { get }
+}
+@_spi(STP) extension Stripe.PaymentAnalytic {
+  @_spi(STP) public var params: [Swift.String : Any] {
+    @_spi(STP) get
+  }
+}
+@objc public protocol STPApplePayContextDelegate : StripeApplePay._stpinternal_STPApplePayContextDelegateBase {
+  @objc(applePayContext:didCreatePaymentMethod:paymentInformation:completion:) func applePayContext(_ context: StripeApplePay.STPApplePayContext, didCreatePaymentMethod paymentMethod: StripePayments.STPPaymentMethod, paymentInformation: PassKit.PKPayment, completion: @escaping StripeApplePay.STPIntentClientSecretCompletionBlock)
+  @objc(applePayContext:didCompleteWithStatus:error:) func applePayContext(_ context: StripeApplePay.STPApplePayContext, didCompleteWith status: StripePayments.STPPaymentStatus, error: Swift.Error?)
+}
+@_inheritsConvenienceInitializers @objc public class STPApplePayPaymentOption : ObjectiveC.NSObject, Stripe.STPPaymentOption {
+  @objc public var image: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var templateImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var label: Swift.String {
+    @objc get
+  }
+  @objc public var isReusable: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol STPBackendAPIAdapter : ObjectiveC.NSObjectProtocol {
+  @objc func retrieveCustomer(_ completion: StripePayments.STPCustomerCompletionBlock?)
+  @objc func listPaymentMethodsForCustomer(completion: StripePayments.STPPaymentMethodsCompletionBlock?)
+  @objc func attachPaymentMethod(toCustomer paymentMethod: StripePayments.STPPaymentMethod, completion: StripePayments.STPErrorBlock?)
+  @objc optional func detachPaymentMethod(fromCustomer paymentMethod: StripePayments.STPPaymentMethod, completion: StripePayments.STPErrorBlock?)
+  @objc optional func updateCustomer(withShippingAddress shipping: StripePayments.STPAddress, completion: StripePayments.STPErrorBlock?)
+}
+@objc public enum STPBankSelectionMethod : Swift.Int {
+  case FPX
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class STPBankSelectionViewController : Stripe.STPCoreTableViewController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(bankMethod: Stripe.STPBankSelectionMethod)
+  @_Concurrency.MainActor(unsafe) @objc convenience required public init(theme: Stripe.STPTheme?)
+  @objc @_Concurrency.MainActor(unsafe) public init(bankMethod: Stripe.STPBankSelectionMethod, configuration: Stripe.STPPaymentConfiguration, theme: Stripe.STPTheme)
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: Stripe.STPBankSelectionViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) public var apiClient: StripeCore.STPAPIClient
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, shouldHighlightRowAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+@objc public protocol STPBankSelectionViewControllerDelegate : ObjectiveC.NSObjectProtocol {
+  @objc(bankSelectionViewController:didCreatePaymentMethodParams:) func bankSelectionViewController(_ bankViewController: Stripe.STPBankSelectionViewController, didCreatePaymentMethodParams paymentMethodParams: StripePayments.STPPaymentMethodParams)
+}
+@_spi(STP) extension Stripe.STPBankSelectionViewController : StripeCore.STPAnalyticsProtocol {
+  @_spi(STP) @_Concurrency.MainActor(unsafe) public static var stp_analyticsIdentifier: Swift.String
+}
+@objc public enum STPShippingType : Swift.Int {
+  case shipping
+  case delivery
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum STPShippingStatus : Swift.Int {
+  case valid
+  case invalid
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias STPShippingMethodsCompletionBlock = (Stripe.STPShippingStatus, Swift.Error?, [PassKit.PKShippingMethod]?, PassKit.PKShippingMethod?) -> Swift.Void
+extension StripePayments.STPCard : Stripe.STPPaymentOption {
+  @objc dynamic public var image: UIKit.UIImage {
+    @objc get
+  }
+  @objc dynamic public var templateImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc dynamic public var label: Swift.String {
+    @objc get
+  }
+  @objc dynamic public var isReusable: Swift.Bool {
+    @objc get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class STPCoreScrollViewController : Stripe.STPCoreViewController {
+  @objc @_Concurrency.MainActor(unsafe) public var scrollView: UIKit.UIScrollView {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc required public init(theme: Stripe.STPTheme?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class STPCoreTableViewController : Stripe.STPCoreScrollViewController {
+  @objc @_Concurrency.MainActor(unsafe) public var tableView: UIKit.UITableView? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc required public init(theme: Stripe.STPTheme?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class STPCoreViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc convenience dynamic public init()
+  @objc @_Concurrency.MainActor(unsafe) required public init(theme: Stripe.STPTheme?)
+  @_Concurrency.MainActor(unsafe) @objc required override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers open class STPCustomerContext : ObjectiveC.NSObject, Stripe.STPBackendAPIAdapter {
+  @objc(initWithKeyProvider:) convenience public init(keyProvider: Stripe.STPCustomerEphemeralKeyProvider)
+  @objc(initWithKeyProvider:apiClient:) convenience public init(keyProvider: Stripe.STPCustomerEphemeralKeyProvider?, apiClient: StripeCore.STPAPIClient)
+  @objc public func clearCache()
+  @objc public var includeApplePayPaymentMethods: Swift.Bool {
+    @objc get
+    @objc set(includeApplePayMethods)
+  }
+  @objc public func retrieveCustomer(_ completion: StripePayments.STPCustomerCompletionBlock? = nil)
+  @objc public func updateCustomer(withShippingAddress shipping: StripePayments.STPAddress, completion: StripePayments.STPErrorBlock?)
+  @objc public func attachPaymentMethodToCustomer(paymentMethodId: Swift.String, completion: StripePayments.STPErrorBlock?)
+  @objc public func attachPaymentMethod(toCustomer paymentMethod: StripePayments.STPPaymentMethod, completion: StripePayments.STPErrorBlock?)
+  @objc public func detachPaymentMethodFromCustomer(paymentMethodId: Swift.String, completion: StripePayments.STPErrorBlock?)
+  @objc public func detachPaymentMethod(fromCustomer paymentMethod: StripePayments.STPPaymentMethod, completion: StripePayments.STPErrorBlock?)
+  @objc public func listPaymentMethodsForCustomer(completion: StripePayments.STPPaymentMethodsCompletionBlock? = nil)
+  @objc deinit
+}
+@_spi(STP) extension Stripe.STPCustomerContext : StripeCore.STPAnalyticsProtocol {
+  @_spi(STP) public static var stp_analyticsIdentifier: Swift.String
+}
+@objc public protocol STPCustomerEphemeralKeyProvider : ObjectiveC.NSObjectProtocol {
+  @objc(createCustomerKeyWithAPIVersion:completion:) func createCustomerKey(withAPIVersion apiVersion: Swift.String, completion: @escaping StripePayments.STPJSONResponseCompletionBlock)
+}
+@objc public protocol STPIssuingCardEphemeralKeyProvider : ObjectiveC.NSObjectProtocol {
+  @objc(createIssuingCardKeyWithAPIVersion:completion:) func createIssuingCardKey(withAPIVersion apiVersion: Swift.String, completion: @escaping StripePayments.STPJSONResponseCompletionBlock)
+}
+@available(*, deprecated, message: "use `STPCustomerEphemeralKeyProvider` or `STPIssuingCardEphemeralKeyProvider` depending on the type of key that will be fetched.")
+@objc public protocol STPEphemeralKeyProvider : Stripe.STPCustomerEphemeralKeyProvider {
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class STPFakeAddPaymentPassViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) public class func canAddPaymentPass() -> Swift.Bool
+  @objc(initWithRequestConfiguration:delegate:) @_Concurrency.MainActor(unsafe) required public init?(requestConfiguration configuration: PassKit.PKAddPaymentPassRequestConfiguration, delegate: PassKit.PKAddPaymentPassViewControllerDelegate?)
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: PassKit.PKAddPaymentPassViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) @objc convenience override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required convenience dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class STPPaymentActivityIndicatorView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public func setAnimating(_ animating: Swift.Bool, animated: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public var animating: Swift.Bool {
+    @objc get
+    @objc set(animating)
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var hidesWhenStopped: Swift.Bool {
+    @objc get
+    @objc set(hidesWhenStopped)
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var tintColor: UIKit.UIColor! {
+    @objc get
+    @objc set(tintColor)
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class STPPaymentConfiguration : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc(sharedConfiguration) public static var shared: Stripe.STPPaymentConfiguration
+  @objc public var applePayEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var fpxEnabled: Swift.Bool
+  @objc public var requiredBillingAddressFields: Stripe.STPBillingAddressFields
+  @objc public var requiredShippingAddressFields: Swift.Set<StripePayments.STPContactField>?
+  @objc public var verifyPrefilledShippingAddress: Swift.Bool
+  @objc public var shippingType: Stripe.STPShippingType
+  @objc public var availableCountries: Swift.Set<Swift.String>
+  @objc public var companyName: Swift.String
+  @objc public var appleMerchantIdentifier: Swift.String?
+  @objc public var canDeletePaymentOptions: Swift.Bool
+  @objc public var cardScanningEnabled: Swift.Bool
+  @available(*, deprecated, message: "additionalPaymentOptions has been removed. Set applePayEnabled and fpxEnabled on STPPaymentConfiguration instead.")
+  @objc public var additionalPaymentOptions: Swift.Int
+  @available(*, deprecated, message: "If you used STPPaymentConfiguration.shared.publishableKey, use STPAPIClient.shared.publishableKey instead. If you passed a STPPaymentConfiguration instance to an SDK component, create an STPAPIClient, set publishableKey on it, and set the SDK component's APIClient property.")
+  @objc public var publishableKey: Swift.String? {
+    @objc get
+    @objc set(publishableKey)
+  }
+  @available(*, deprecated, message: "If you used STPPaymentConfiguration.shared.stripeAccount, use STPAPIClient.shared.stripeAccount instead. If you passed a STPPaymentConfiguration instance to an SDK component, create an STPAPIClient, set stripeAccount on it, and set the SDK component's APIClient property.")
+  @objc public var stripeAccount: Swift.String? {
+    @objc get
+    @objc set(stripeAccount)
+  }
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(STPPaymentContext) public class STPPaymentContext : ObjectiveC.NSObject, StripePayments.STPAuthenticationContext, Stripe.STPPaymentOptionsViewControllerDelegate, Stripe.STPShippingAddressViewControllerDelegate {
+  @objc convenience public init(customerContext: Stripe.STPCustomerContext)
+  @objc convenience public init(customerContext: Stripe.STPCustomerContext, configuration: Stripe.STPPaymentConfiguration, theme: Stripe.STPTheme)
+  @objc convenience public init(apiAdapter: Stripe.STPBackendAPIAdapter)
+  @objc public init(apiAdapter: Stripe.STPBackendAPIAdapter, configuration: Stripe.STPPaymentConfiguration, theme: Stripe.STPTheme)
+  @objc public var apiAdapter: Stripe.STPBackendAPIAdapter {
+    get
+  }
+  @objc public var configuration: Stripe.STPPaymentConfiguration {
+    get
+  }
+  @objc public var theme: Stripe.STPTheme {
+    get
+  }
+  @objc public var prefilledInformation: Stripe.STPUserInformation? {
+    @objc get
+    @objc set(prefilledInformation)
+  }
+  @objc weak public var hostViewController: UIKit.UIViewController? {
+    @objc get
+    @objc set(hostViewController)
+  }
+  @objc weak public var delegate: Stripe.STPPaymentContextDelegate? {
+    @objc get
+    @objc set(delegate)
+  }
+  @objc public var loading: Swift.Bool {
+    @objc get
+  }
+  @objc public var defaultPaymentMethod: Swift.String?
+  @objc public var selectedPaymentOption: Stripe.STPPaymentOption? {
+    @objc get
+  }
+  @objc public var paymentOptions: [Stripe.STPPaymentOption]? {
+    @objc get
+  }
+  @objc public var selectedShippingMethod: PassKit.PKShippingMethod? {
+    get
+  }
+  @objc public var shippingMethods: [PassKit.PKShippingMethod]? {
+    @objc get
+  }
+  @objc public var shippingAddress: StripePayments.STPAddress? {
+    get
+  }
+  @objc public var paymentAmount: Swift.Int {
+    @objc get
+    @objc set(paymentAmount)
+  }
+  @objc public var paymentCurrency: Swift.String
+  @objc public var paymentCountry: Swift.String
+  @objc public var paymentSummaryItems: [PassKit.PKPaymentSummaryItem] {
+    @objc get
+    @objc set(paymentSummaryItems)
+  }
+  @objc public var modalPresentationStyle: UIKit.UIModalPresentationStyle
+  @objc public var largeTitleDisplayMode: UIKit.UINavigationItem.LargeTitleDisplayMode
+  @objc public var paymentOptionsViewControllerFooterView: UIKit.UIView?
+  @objc public var addCardViewControllerFooterView: UIKit.UIView?
+  public var apiClient: StripeCore.STPAPIClient
+  @objc public func retryLoading()
+  @objc public func presentPaymentOptionsViewController()
+  @objc public func pushPaymentOptionsViewController()
+  @objc public func presentShippingViewController()
+  @objc public func pushShippingViewController()
+  @objc public func requestPayment()
+  @objc public func paymentOptionsViewController(_ paymentOptionsViewController: Stripe.STPPaymentOptionsViewController, didSelect paymentOption: Stripe.STPPaymentOption)
+  @objc public func paymentOptionsViewControllerDidFinish(_ paymentOptionsViewController: Stripe.STPPaymentOptionsViewController)
+  @objc public func paymentOptionsViewControllerDidCancel(_ paymentOptionsViewController: Stripe.STPPaymentOptionsViewController)
+  @objc public func paymentOptionsViewController(_ paymentOptionsViewController: Stripe.STPPaymentOptionsViewController, didFailToLoadWithError error: Swift.Error)
+  @objc public func shippingAddressViewControllerDidCancel(_ addressViewController: Stripe.STPShippingAddressViewController)
+  @objc public func shippingAddressViewController(_ addressViewController: Stripe.STPShippingAddressViewController, didEnter address: StripePayments.STPAddress, completion: @escaping Stripe.STPShippingMethodsCompletionBlock)
+  @objc public func shippingAddressViewController(_ addressViewController: Stripe.STPShippingAddressViewController, didFinishWith address: StripePayments.STPAddress, shippingMethod method: PassKit.PKShippingMethod?)
+  @objc public func authenticationPresentingViewController() -> UIKit.UIViewController
+  @objc public func prepare(forPresentation completion: @escaping StripePayments.STPVoidBlock)
+  @objc deinit
+}
+@objc public protocol STPPaymentContextDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func paymentContext(_ paymentContext: Stripe.STPPaymentContext, didFailToLoadWithError error: Swift.Error)
+  @objc func paymentContextDidChange(_ paymentContext: Stripe.STPPaymentContext)
+  @objc func paymentContext(_ paymentContext: Stripe.STPPaymentContext, didCreatePaymentResult paymentResult: Stripe.STPPaymentResult, completion: @escaping StripePayments.STPPaymentStatusBlock)
+  @objc func paymentContext(_ paymentContext: Stripe.STPPaymentContext, didFinishWith status: StripePayments.STPPaymentStatus, error: Swift.Error?)
+  @objc optional func paymentContext(_ paymentContext: Stripe.STPPaymentContext, didUpdateShippingAddress address: StripePayments.STPAddress, completion: @escaping Stripe.STPShippingMethodsCompletionBlock)
+}
+@_spi(STP) extension Stripe.STPPaymentContext : StripeCore.STPAnalyticsProtocol {
+  @_spi(STP) public static var stp_analyticsIdentifier: Swift.String
+}
+extension StripePayments.STPPaymentIntentParams {
+  @objc dynamic public func configure(with paymentResult: Stripe.STPPaymentResult)
+}
+extension StripePayments.STPPaymentMethod : Stripe.STPPaymentOption {
+  @objc dynamic public var image: UIKit.UIImage {
+    @objc get
+  }
+  @objc dynamic public var templateImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc dynamic public var label: Swift.String {
+    @objc get
+  }
+  @objc dynamic public var isReusable: Swift.Bool {
+    @objc get
+  }
+}
+extension StripePayments.STPPaymentMethodParams : Stripe.STPPaymentOption {
+  @objc dynamic public var image: UIKit.UIImage {
+    @objc get
+  }
+  @objc dynamic public var templateImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc dynamic public var isReusable: Swift.Bool {
+    @objc get
+  }
+}
+@objc public protocol STPPaymentOption : ObjectiveC.NSObjectProtocol {
+  @objc var image: UIKit.UIImage { get }
+  @objc var templateImage: UIKit.UIImage { get }
+  @objc var label: Swift.String { get }
+  @objc var isReusable: Swift.Bool { get }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class STPPaymentOptionsViewController : Stripe.STPCoreViewController, Stripe.STPAddCardViewControllerDelegate {
+  @objc(initWithPaymentContext:) @_Concurrency.MainActor(unsafe) convenience public init(paymentContext: Stripe.STPPaymentContext)
+  @objc(initWithConfiguration:theme:customerContext:delegate:) @_Concurrency.MainActor(unsafe) convenience public init(configuration: Stripe.STPPaymentConfiguration, theme: Stripe.STPTheme, customerContext: Stripe.STPCustomerContext, delegate: Stripe.STPPaymentOptionsViewControllerDelegate)
+  @objc(initWithConfiguration:theme:apiAdapter:delegate:) @_Concurrency.MainActor(unsafe) public init(configuration: Stripe.STPPaymentConfiguration, theme: Stripe.STPTheme, apiAdapter: Stripe.STPBackendAPIAdapter, delegate: Stripe.STPPaymentOptionsViewControllerDelegate)
+  @objc @_Concurrency.MainActor(unsafe) public var prefilledInformation: Stripe.STPUserInformation? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var defaultPaymentMethod: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public var paymentOptionsViewControllerFooterView: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var addCardViewControllerFooterView: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var apiClient: StripeCore.STPAPIClient
+  @objc(dismissWithCompletion:) @_Concurrency.MainActor(unsafe) public func dismiss(withCompletion completion: StripePayments.STPVoidBlock?)
+  @available(*, unavailable, message: "Use one of the initializers declared in this interface instead.")
+  @_Concurrency.MainActor(unsafe) @objc required public init(theme: Stripe.STPTheme?)
+  @available(*, unavailable, message: "Use one of the initializers declared in this interface instead.")
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @available(*, unavailable, message: "Use one of the initializers declared in this interface instead.")
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc public func addCardViewControllerDidCancel(_ addCardViewController: Stripe.STPAddCardViewController)
+  @_Concurrency.MainActor(unsafe) @objc public func addCardViewController(_ addCardViewController: Stripe.STPAddCardViewController, didCreatePaymentMethod paymentMethod: StripePayments.STPPaymentMethod, completion: @escaping StripePayments.STPErrorBlock)
+  @objc deinit
+}
+@objc public protocol STPPaymentOptionsViewControllerDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func paymentOptionsViewController(_ paymentOptionsViewController: Stripe.STPPaymentOptionsViewController, didFailToLoadWithError error: Swift.Error)
+  @objc func paymentOptionsViewControllerDidFinish(_ paymentOptionsViewController: Stripe.STPPaymentOptionsViewController)
+  @objc func paymentOptionsViewControllerDidCancel(_ paymentOptionsViewController: Stripe.STPPaymentOptionsViewController)
+  @objc(paymentOptionsViewController:didSelectPaymentOption:) optional func paymentOptionsViewController(_ paymentOptionsViewController: Stripe.STPPaymentOptionsViewController, didSelect paymentOption: Stripe.STPPaymentOption)
+}
+@_spi(STP) extension Stripe.STPPaymentOptionsViewController : StripeCore.STPAnalyticsProtocol {
+  @_spi(STP) @_Concurrency.MainActor(unsafe) public static var stp_analyticsIdentifier: Swift.String
+}
+@objc public class STPPaymentResult : ObjectiveC.NSObject {
+  @objc public var paymentMethod: StripePayments.STPPaymentMethod? {
+    get
+  }
+  @objc public var paymentMethodParams: StripePayments.STPPaymentMethodParams? {
+    get
+  }
+  @objc weak public var paymentOption: Stripe.STPPaymentOption? {
+    @objc get
+  }
+  @objc public init(paymentOption: Stripe.STPPaymentOption?)
+  @objc deinit
+}
+@objc public class STPPinManagementService : ObjectiveC.NSObject {
+  public var apiClient: StripeCore.STPAPIClient
+  @objc public init(keyProvider: Stripe.STPIssuingCardEphemeralKeyProvider)
+  @objc public func retrievePin(_ cardId: Swift.String, verificationId: Swift.String, oneTimeCode: Swift.String, completion: @escaping StripePayments.STPPinCompletionBlock)
+  @objc public func updatePin(_ cardId: Swift.String, newPin: Swift.String, verificationId: Swift.String, oneTimeCode: Swift.String, completion: @escaping StripePayments.STPPinCompletionBlock)
+  @objc deinit
+}
+@objc public class STPPushProvisioningContext : ObjectiveC.NSObject {
+  public var apiClient: StripeCore.STPAPIClient
+  @available(*, deprecated, renamed: "requestConfiguration(withName:description:last4:brand:primaryAccountIdentifier:)", message: "Use `requestConfiguration(withName:description:last4:brand:primaryAccountIdentifier:)` instead.")
+  @objc public class func requestConfiguration(withName name: Swift.String, description: Swift.String?, last4: Swift.String?, brand: StripePayments.STPCardBrand) -> PassKit.PKAddPaymentPassRequestConfiguration
+  @objc public class func requestConfiguration(withName name: Swift.String, description: Swift.String?, last4: Swift.String?, brand: StripePayments.STPCardBrand, primaryAccountIdentifier: Swift.String?) -> PassKit.PKAddPaymentPassRequestConfiguration
+  @objc public init(keyProvider: Stripe.STPIssuingCardEphemeralKeyProvider)
+  @objc public func addPaymentPassViewController(_ controller: PassKit.PKAddPaymentPassViewController, generateRequestWithCertificateChain certificates: [Foundation.Data], nonce: Foundation.Data, nonceSignature: Foundation.Data, completionHandler handler: @escaping (PassKit.PKAddPaymentPassRequest) -> Swift.Void)
+  @objc deinit
+}
+@objc public class STPPushProvisioningDetailsParams : ObjectiveC.NSObject {
+  @objc public var cardId: Swift.String {
+    get
+  }
+  @objc public var certificates: [Foundation.Data] {
+    get
+  }
+  @objc public var nonce: Foundation.Data {
+    get
+  }
+  @objc public var nonceSignature: Foundation.Data {
+    get
+  }
+  @objc public var certificatesBase64: [Swift.String] {
+    @objc get
+  }
+  @objc public var nonceHex: Swift.String {
+    @objc get
+  }
+  @objc public var nonceSignatureHex: Swift.String {
+    @objc get
+  }
+  @objc required public init(cardId: Swift.String, certificates: [Foundation.Data], nonce: Foundation.Data, nonceSignature: Foundation.Data)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class STPShippingAddressViewController : Stripe.STPCoreTableViewController {
+  @_Concurrency.MainActor(unsafe) @objc convenience dynamic public init()
+  @objc(initWithPaymentContext:) @_Concurrency.MainActor(unsafe) convenience public init(paymentContext: Stripe.STPPaymentContext)
+  @objc(initWithConfiguration:theme:currency:shippingAddress:selectedShippingMethod:prefilledInformation:) @_Concurrency.MainActor(unsafe) public init(configuration: Stripe.STPPaymentConfiguration, theme: Stripe.STPTheme, currency: Swift.String?, shippingAddress: StripePayments.STPAddress?, selectedShippingMethod: PassKit.PKShippingMethod?, prefilledInformation: Stripe.STPUserInformation?)
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: Stripe.STPShippingAddressViewControllerDelegate?
+  @objc(dismissWithCompletion:) @_Concurrency.MainActor(unsafe) public func dismiss(withCompletion completion: StripePayments.STPVoidBlock?)
+  @available(*, unavailable, message: "Use one of the initializers declared in this interface instead.")
+  @_Concurrency.MainActor(unsafe) @objc required public init(theme: Stripe.STPTheme?)
+  @available(*, unavailable, message: "Use one of the initializers declared in this interface instead.")
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @objc deinit
+}
+@objc public protocol STPShippingAddressViewControllerDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func shippingAddressViewControllerDidCancel(_ addressViewController: Stripe.STPShippingAddressViewController)
+  @objc(shippingAddressViewController:didEnterAddress:completion:) func shippingAddressViewController(_ addressViewController: Stripe.STPShippingAddressViewController, didEnter address: StripePayments.STPAddress, completion: @escaping Stripe.STPShippingMethodsCompletionBlock)
+  @objc(shippingAddressViewController:didFinishWithAddress:shippingMethod:) func shippingAddressViewController(_ addressViewController: Stripe.STPShippingAddressViewController, didFinishWith address: StripePayments.STPAddress, shippingMethod method: PassKit.PKShippingMethod?)
+}
+extension Stripe.STPShippingAddressViewController : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+}
+@_spi(STP) extension Stripe.STPShippingAddressViewController : StripeCore.STPAnalyticsProtocol {
+  @_spi(STP) @_Concurrency.MainActor(unsafe) public static var stp_analyticsIdentifier: Swift.String
+}
+extension StripePayments.STPSource : Stripe.STPPaymentOption {
+  @objc dynamic public var image: UIKit.UIImage {
+    @objc get
+  }
+  @objc dynamic public var templateImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc dynamic public var label: Swift.String {
+    @objc get
+  }
+  @objc dynamic public var isReusable: Swift.Bool {
+    @objc get
+  }
+}
+@objc @_inheritsConvenienceInitializers final public class STPTheme : ObjectiveC.NSObject {
+  @objc public static let defaultTheme: Stripe.STPTheme
+  @available(*, deprecated, renamed: "defaultTheme", message: "Use defaultTheme instead")
+  public static func `default`() -> Stripe.STPTheme
+  @objc final public var primaryBackgroundColor: UIKit.UIColor
+  @objc final public var secondaryBackgroundColor: UIKit.UIColor
+  @objc final public var tertiaryBackgroundColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc final public var quaternaryBackgroundColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc final public var primaryForegroundColor: UIKit.UIColor
+  @objc final public var secondaryForegroundColor: UIKit.UIColor
+  @objc final public var tertiaryForegroundColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc final public var accentColor: UIKit.UIColor
+  @objc final public var errorColor: UIKit.UIColor
+  @objc final public var font: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc final public var emphasisFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc final public var barStyle: UIKit.UIBarStyle {
+    @objc get
+    @objc set
+  }
+  @objc final public var translucentNavigationBar: Swift.Bool
+  @objc final public var smallFont: UIKit.UIFont {
+    @objc get
+  }
+  @objc final public var largeFont: UIKit.UIFont {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Stripe.STPTheme : Foundation.NSCopying {
+  @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+}
+@objc @_inheritsConvenienceInitializers public class STPUserInformation : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var billingAddress: StripePayments.STPAddress?
+  @objc public var shippingAddress: StripePayments.STPAddress?
+  @objc(setBillingAddressWithBillingDetails:) public func setBillingAddress(with billingDetails: StripePayments.STPPaymentMethodBillingDetails)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_spi(STP) @_hasMissingDesignatedInitializers final public class StripeBundleLocator : StripeCore.BundleLocatorProtocol {
+  @_spi(STP) public static let internalClass: Swift.AnyClass
+  @_spi(STP) public static let bundleName: Swift.String
+  @_spi(STP) public static let resourcesBundle: Foundation.Bundle
+  @_spi(STP) @objc deinit
+}
+extension UIKit.UINavigationBar {
+  @available(*, deprecated, message: "Use the `stp_theme` property instead")
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func stp_setTheme(_ theme: Stripe.STPTheme)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var stp_theme: Stripe.STPTheme? {
+    @objc get
+    @objc set(theme)
+  }
+}
+extension Foundation.UserDefaults {
+  @_spi(STP) public enum StripeKeys : Swift.String {
+    @_spi(STP) case customerToLastSelectedPaymentMethod
+    @_spi(STP) public init?(rawValue: Swift.String)
+    @_spi(STP) public typealias RawValue = Swift.String
+    @_spi(STP) public var rawValue: Swift.String {
+      @_spi(STP) get
+    }
+  }
+  @_spi(STP) public var customerToLastSelectedPaymentMethod: [Swift.String : Swift.String]? {
+    get
+    set
+  }
+}
+extension Stripe.STPBankSelectionMethod : Swift.Equatable {}
+extension Stripe.STPBankSelectionMethod : Swift.Hashable {}
+extension Stripe.STPBankSelectionMethod : Swift.RawRepresentable {}
+extension Stripe.STPBillingAddressFields : Swift.Equatable {}
+extension Stripe.STPBillingAddressFields : Swift.Hashable {}
+extension Stripe.STPBillingAddressFields : Swift.RawRepresentable {}
+extension Stripe.STPShippingStatus : Swift.Equatable {}
+extension Stripe.STPShippingStatus : Swift.Hashable {}
+extension Stripe.STPShippingStatus : Swift.RawRepresentable {}
+extension Stripe.STPShippingType : Swift.Equatable {}
+extension Stripe.STPShippingType : Swift.Hashable {}
+extension Stripe.STPShippingType : Swift.RawRepresentable {}
+extension Foundation.UserDefaults.StripeKeys : Swift.Equatable {}
+extension Foundation.UserDefaults.StripeKeys : Swift.Hashable {}
+extension Foundation.UserDefaults.StripeKeys : Swift.RawRepresentable {}

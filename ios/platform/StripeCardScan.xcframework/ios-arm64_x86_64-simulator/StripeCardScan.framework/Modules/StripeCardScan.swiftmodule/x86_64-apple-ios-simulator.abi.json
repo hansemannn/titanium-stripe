@@ -1,0 +1,5199 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CreditCardOcrImplementation",
+        "printedName": "CreditCardOcrImplementation",
+        "declKind": "Class",
+        "usr": "s:14StripeCardScan06CreditB17OcrImplementationC",
+        "mangledName": "$s14StripeCardScan06CreditB17OcrImplementationC",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "VideoToolbox",
+        "printedName": "VideoToolbox",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VideoToolbox",
+        "printedName": "VideoToolbox",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SSDOcr",
+        "printedName": "SSDOcr",
+        "declKind": "Class",
+        "usr": "s:14StripeCardScan6SSDOcrC",
+        "mangledName": "$s14StripeCardScan6SSDOcrC",
+        "moduleName": "StripeCardScan",
+        "intro_Macosx": "10.13.2",
+        "intro_iOS": "11.2",
+        "intro_tvOS": "11.2",
+        "intro_watchOS": "4.2",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "Available",
+          "Available",
+          "Available",
+          "Available",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UxModel",
+        "printedName": "UxModel",
+        "declKind": "Class",
+        "usr": "s:14StripeCardScan7UxModelC",
+        "mangledName": "$s14StripeCardScan7UxModelC",
+        "moduleName": "StripeCardScan",
+        "intro_Macosx": "10.13.2",
+        "intro_iOS": "11.2",
+        "intro_tvOS": "11.2",
+        "intro_watchOS": "4.2",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "Available",
+          "Available",
+          "Available",
+          "Available",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SSDOcrDetect",
+        "printedName": "SSDOcrDetect",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadModelFromBundle",
+            "printedName": "loadModelFromBundle()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "StripeCardScan.SSDOcr?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SSDOcr",
+                    "printedName": "StripeCardScan.SSDOcr",
+                    "usr": "s:14StripeCardScan6SSDOcrC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14StripeCardScan12SSDOcrDetectC19loadModelFromBundleAA0D0CSgyFZ",
+            "mangledName": "$s14StripeCardScan12SSDOcrDetectC19loadModelFromBundleAA0D0CSgyFZ",
+            "moduleName": "StripeCardScan",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14StripeCardScan12SSDOcrDetectC",
+        "mangledName": "$s14StripeCardScan12SSDOcrDetectC",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardScanSheetResult",
+        "printedName": "CardScanSheetResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "completed",
+            "printedName": "completed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CardScanSheetResult.Type) -> (StripeCardScan.ScannedCard) -> StripeCardScan.CardScanSheetResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StripeCardScan.ScannedCard) -> StripeCardScan.CardScanSheetResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardScanSheetResult",
+                        "printedName": "StripeCardScan.CardScanSheetResult",
+                        "usr": "s:14StripeCardScan0bC11SheetResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(card: StripeCardScan.ScannedCard)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ScannedCard",
+                            "printedName": "StripeCardScan.ScannedCard",
+                            "usr": "s:14StripeCardScan07ScannedB0V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCardScan.CardScanSheetResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardScanSheetResult",
+                        "printedName": "StripeCardScan.CardScanSheetResult",
+                        "usr": "s:14StripeCardScan0bC11SheetResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14StripeCardScan0bC11SheetResultO9completedyAcA07ScannedB0V_tcACmF",
+            "mangledName": "$s14StripeCardScan0bC11SheetResultO9completedyAcA07ScannedB0V_tcACmF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "canceled",
+            "printedName": "canceled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CardScanSheetResult.Type) -> StripeCardScan.CardScanSheetResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardScanSheetResult",
+                    "printedName": "StripeCardScan.CardScanSheetResult",
+                    "usr": "s:14StripeCardScan0bC11SheetResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCardScan.CardScanSheetResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardScanSheetResult",
+                        "printedName": "StripeCardScan.CardScanSheetResult",
+                        "usr": "s:14StripeCardScan0bC11SheetResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14StripeCardScan0bC11SheetResultO8canceledyA2CmF",
+            "mangledName": "$s14StripeCardScan0bC11SheetResultO8canceledyA2CmF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CardScanSheetResult.Type) -> (Swift.Error) -> StripeCardScan.CardScanSheetResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> StripeCardScan.CardScanSheetResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardScanSheetResult",
+                        "printedName": "StripeCardScan.CardScanSheetResult",
+                        "usr": "s:14StripeCardScan0bC11SheetResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCardScan.CardScanSheetResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardScanSheetResult",
+                        "printedName": "StripeCardScan.CardScanSheetResult",
+                        "usr": "s:14StripeCardScan0bC11SheetResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14StripeCardScan0bC11SheetResultO6failedyACs5Error_p_tcACmF",
+            "mangledName": "$s14StripeCardScan0bC11SheetResultO6failedyACs5Error_p_tcACmF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 2
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14StripeCardScan0bC11SheetResultO",
+        "mangledName": "$s14StripeCardScan0bC11SheetResultO",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen",
+          "RawDocComment"
+        ],
+        "isEnumExhaustive": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardScanSheet",
+        "printedName": "CardScanSheet",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardScanSheet",
+                "printedName": "StripeCardScan.CardScanSheet",
+                "usr": "s:14StripeCardScan0bC5SheetC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14StripeCardScan0bC5SheetCACycfc",
+            "mangledName": "$s14StripeCardScan0bC5SheetCACycfc",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "present",
+            "printedName": "present(from:completion:animated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CardScanSheetResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardScanSheetResult",
+                    "printedName": "StripeCardScan.CardScanSheetResult",
+                    "usr": "s:14StripeCardScan0bC11SheetResultO"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14StripeCardScan0bC5SheetC7present4from10completion8animatedySo16UIViewControllerC_yAA0bcD6ResultOcSbtF",
+            "mangledName": "$s14StripeCardScan0bC5SheetC7present4from10completion8animatedySo16UIViewControllerC_yAA0bcD6ResultOcSbtF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14StripeCardScan0bC5SheetC",
+        "mangledName": "$s14StripeCardScan0bC5SheetC",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "VideoToolbox",
+        "printedName": "VideoToolbox",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CancellationReason",
+        "printedName": "CancellationReason",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "back",
+            "printedName": "back",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CancellationReason.Type) -> StripeCardScan.CancellationReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CancellationReason",
+                    "printedName": "StripeCardScan.CancellationReason",
+                    "usr": "s:14StripeCardScan18CancellationReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCardScan.CancellationReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CancellationReason",
+                        "printedName": "StripeCardScan.CancellationReason",
+                        "usr": "s:14StripeCardScan18CancellationReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14StripeCardScan18CancellationReasonO4backyA2CmF",
+            "mangledName": "$s14StripeCardScan18CancellationReasonO4backyA2CmF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closed",
+            "printedName": "closed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CancellationReason.Type) -> StripeCardScan.CancellationReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CancellationReason",
+                    "printedName": "StripeCardScan.CancellationReason",
+                    "usr": "s:14StripeCardScan18CancellationReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCardScan.CancellationReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CancellationReason",
+                        "printedName": "StripeCardScan.CancellationReason",
+                        "usr": "s:14StripeCardScan18CancellationReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14StripeCardScan18CancellationReasonO6closedyA2CmF",
+            "mangledName": "$s14StripeCardScan18CancellationReasonO6closedyA2CmF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userCannotScan",
+            "printedName": "userCannotScan",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CancellationReason.Type) -> StripeCardScan.CancellationReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CancellationReason",
+                    "printedName": "StripeCardScan.CancellationReason",
+                    "usr": "s:14StripeCardScan18CancellationReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCardScan.CancellationReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CancellationReason",
+                        "printedName": "StripeCardScan.CancellationReason",
+                        "usr": "s:14StripeCardScan18CancellationReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14StripeCardScan18CancellationReasonO010userCannotC0yA2CmF",
+            "mangledName": "$s14StripeCardScan18CancellationReasonO010userCannotC0yA2CmF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "StripeCardScan.CancellationReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CancellationReason",
+                    "printedName": "StripeCardScan.CancellationReason",
+                    "usr": "s:14StripeCardScan18CancellationReasonO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14StripeCardScan18CancellationReasonO8rawValueACSgSS_tcfc",
+            "mangledName": "$s14StripeCardScan18CancellationReasonO8rawValueACSgSS_tcfc",
+            "moduleName": "StripeCardScan",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14StripeCardScan18CancellationReasonO8rawValueSSvp",
+            "mangledName": "$s14StripeCardScan18CancellationReasonO8rawValueSSvp",
+            "moduleName": "StripeCardScan",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14StripeCardScan18CancellationReasonO8rawValueSSvg",
+                "mangledName": "$s14StripeCardScan18CancellationReasonO8rawValueSSvg",
+                "moduleName": "StripeCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14StripeCardScan18CancellationReasonO",
+        "mangledName": "$s14StripeCardScan18CancellationReasonO",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardImageVerificationSheetResult",
+        "printedName": "CardImageVerificationSheetResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "completed",
+            "printedName": "completed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CardImageVerificationSheetResult.Type) -> (StripeCardScan.ScannedCard) -> StripeCardScan.CardImageVerificationSheetResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StripeCardScan.ScannedCard) -> StripeCardScan.CardImageVerificationSheetResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardImageVerificationSheetResult",
+                        "printedName": "StripeCardScan.CardImageVerificationSheetResult",
+                        "usr": "s:14StripeCardScan0B28ImageVerificationSheetResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(scannedCard: StripeCardScan.ScannedCard)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ScannedCard",
+                            "printedName": "StripeCardScan.ScannedCard",
+                            "usr": "s:14StripeCardScan07ScannedB0V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCardScan.CardImageVerificationSheetResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardImageVerificationSheetResult",
+                        "printedName": "StripeCardScan.CardImageVerificationSheetResult",
+                        "usr": "s:14StripeCardScan0B28ImageVerificationSheetResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14StripeCardScan0B28ImageVerificationSheetResultO9completedyAcA07ScannedB0V_tcACmF",
+            "mangledName": "$s14StripeCardScan0B28ImageVerificationSheetResultO9completedyAcA07ScannedB0V_tcACmF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "canceled",
+            "printedName": "canceled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CardImageVerificationSheetResult.Type) -> (StripeCardScan.CancellationReason) -> StripeCardScan.CardImageVerificationSheetResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StripeCardScan.CancellationReason) -> StripeCardScan.CardImageVerificationSheetResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardImageVerificationSheetResult",
+                        "printedName": "StripeCardScan.CardImageVerificationSheetResult",
+                        "usr": "s:14StripeCardScan0B28ImageVerificationSheetResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: StripeCardScan.CancellationReason)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CancellationReason",
+                            "printedName": "StripeCardScan.CancellationReason",
+                            "usr": "s:14StripeCardScan18CancellationReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCardScan.CardImageVerificationSheetResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardImageVerificationSheetResult",
+                        "printedName": "StripeCardScan.CardImageVerificationSheetResult",
+                        "usr": "s:14StripeCardScan0B28ImageVerificationSheetResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14StripeCardScan0B28ImageVerificationSheetResultO8canceledyAcA18CancellationReasonO_tcACmF",
+            "mangledName": "$s14StripeCardScan0B28ImageVerificationSheetResultO8canceledyAcA18CancellationReasonO_tcACmF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CardImageVerificationSheetResult.Type) -> (Swift.Error) -> StripeCardScan.CardImageVerificationSheetResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> StripeCardScan.CardImageVerificationSheetResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardImageVerificationSheetResult",
+                        "printedName": "StripeCardScan.CardImageVerificationSheetResult",
+                        "usr": "s:14StripeCardScan0B28ImageVerificationSheetResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCardScan.CardImageVerificationSheetResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardImageVerificationSheetResult",
+                        "printedName": "StripeCardScan.CardImageVerificationSheetResult",
+                        "usr": "s:14StripeCardScan0B28ImageVerificationSheetResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14StripeCardScan0B28ImageVerificationSheetResultO6failedyACs5Error_p_tcACmF",
+            "mangledName": "$s14StripeCardScan0B28ImageVerificationSheetResultO6failedyACs5Error_p_tcACmF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 2
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14StripeCardScan0B28ImageVerificationSheetResultO",
+        "mangledName": "$s14StripeCardScan0B28ImageVerificationSheetResultO",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen",
+          "RawDocComment"
+        ],
+        "isEnumExhaustive": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardImageVerificationSheet",
+        "printedName": "CardImageVerificationSheet",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cardImageVerificationIntentId:cardImageVerificationIntentSecret:configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardImageVerificationSheet",
+                "printedName": "StripeCardScan.CardImageVerificationSheet",
+                "usr": "s:14StripeCardScan0B22ImageVerificationSheetC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "StripeCardScan.CardImageVerificationSheet.Configuration",
+                "hasDefaultArg": true,
+                "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14StripeCardScan0B22ImageVerificationSheetC04carddE8IntentId0gdeH6Secret13configurationACSS_SSAC13ConfigurationVtcfc",
+            "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC04carddE8IntentId0gdeH6Secret13configurationACSS_SSAC13ConfigurationVtcfc",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "present",
+            "printedName": "present(from:completion:animated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CardImageVerificationSheetResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardImageVerificationSheetResult",
+                    "printedName": "StripeCardScan.CardImageVerificationSheetResult",
+                    "usr": "s:14StripeCardScan0B28ImageVerificationSheetResultO"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14StripeCardScan0B22ImageVerificationSheetC7present4from10completion8animatedySo16UIViewControllerC_yAA0bdeF6ResultOcSbtF",
+            "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC7present4from10completion8animatedySo16UIViewControllerC_yAA0bdeF6ResultOcSbtF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Configuration",
+            "printedName": "Configuration",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "apiClient",
+                "printedName": "apiClient",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "STPAPIClient",
+                    "printedName": "StripeCore.STPAPIClient",
+                    "usr": "c:@M@StripeCore@objc(cs)STPAPIClient"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV9apiClient0A4Core12STPAPIClientCvp",
+                "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV9apiClient0A4Core12STPAPIClientCvp",
+                "moduleName": "StripeCardScan",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "STPAPIClient",
+                        "printedName": "StripeCore.STPAPIClient",
+                        "usr": "c:@M@StripeCore@objc(cs)STPAPIClient"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV9apiClient0A4Core12STPAPIClientCvg",
+                    "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV9apiClient0A4Core12STPAPIClientCvg",
+                    "moduleName": "StripeCardScan",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "STPAPIClient",
+                        "printedName": "StripeCore.STPAPIClient",
+                        "usr": "c:@M@StripeCore@objc(cs)STPAPIClient"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV9apiClient0A4Core12STPAPIClientCvs",
+                    "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV9apiClient0A4Core12STPAPIClientCvs",
+                    "moduleName": "StripeCardScan",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV9apiClient0A4Core12STPAPIClientCvM",
+                    "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV9apiClient0A4Core12STPAPIClientCvM",
+                    "moduleName": "StripeCardScan",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "strictModeFrames",
+                "printedName": "strictModeFrames",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StrictModeFrameCount",
+                    "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                    "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV16strictModeFramesAC06StrictI10FrameCountOvp",
+                "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV16strictModeFramesAC06StrictI10FrameCountOvp",
+                "moduleName": "StripeCardScan",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "SPIAccessControl",
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StrictModeFrameCount",
+                        "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                        "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV16strictModeFramesAC06StrictI10FrameCountOvg",
+                    "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV16strictModeFramesAC06StrictI10FrameCountOvg",
+                    "moduleName": "StripeCardScan",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StrictModeFrameCount",
+                        "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                        "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV16strictModeFramesAC06StrictI10FrameCountOvs",
+                    "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV16strictModeFramesAC06StrictI10FrameCountOvs",
+                    "moduleName": "StripeCardScan",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV16strictModeFramesAC06StrictI10FrameCountOvM",
+                    "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV16strictModeFramesAC06StrictI10FrameCountOvM",
+                    "moduleName": "StripeCardScan",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Configuration",
+                    "printedName": "StripeCardScan.CardImageVerificationSheet.Configuration",
+                    "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationVAEycfc",
+                "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC13ConfigurationVAEycfc",
+                "moduleName": "StripeCardScan",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV",
+            "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC13ConfigurationV",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "StrictModeFrameCount",
+            "printedName": "StrictModeFrameCount",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "none",
+                "printedName": "none",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount.Type) -> StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StrictModeFrameCount",
+                        "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                        "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StrictModeFrameCount",
+                            "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                            "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO4noneyA2EmF",
+                "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO4noneyA2EmF",
+                "moduleName": "StripeCardScan",
+                "spi_group_names": [
+                  "STP"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "low",
+                "printedName": "low",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount.Type) -> StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StrictModeFrameCount",
+                        "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                        "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StrictModeFrameCount",
+                            "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                            "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO3lowyA2EmF",
+                "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO3lowyA2EmF",
+                "moduleName": "StripeCardScan",
+                "spi_group_names": [
+                  "STP"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "medium",
+                "printedName": "medium",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount.Type) -> StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StrictModeFrameCount",
+                        "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                        "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StrictModeFrameCount",
+                            "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                            "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO6mediumyA2EmF",
+                "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO6mediumyA2EmF",
+                "moduleName": "StripeCardScan",
+                "spi_group_names": [
+                  "STP"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "high",
+                "printedName": "high",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount.Type) -> StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StrictModeFrameCount",
+                        "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                        "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StrictModeFrameCount",
+                            "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                            "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO4highyA2EmF",
+                "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO4highyA2EmF",
+                "moduleName": "StripeCardScan",
+                "spi_group_names": [
+                  "STP"
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StrictModeFrameCount",
+                        "printedName": "StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount",
+                        "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO8rawValueAESgSi_tcfc",
+                "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO8rawValueAESgSi_tcfc",
+                "moduleName": "StripeCardScan",
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO8rawValueSivp",
+                "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO8rawValueSivp",
+                "moduleName": "StripeCardScan",
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO8rawValueSivg",
+                    "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO8rawValueSivg",
+                    "moduleName": "StripeCardScan",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO",
+            "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC20StrictModeFrameCountO",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14StripeCardScan0B22ImageVerificationSheetC",
+        "mangledName": "$s14StripeCardScan0B22ImageVerificationSheetC",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardScanSheetError",
+        "printedName": "CardScanSheetError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidClientSecret",
+            "printedName": "invalidClientSecret",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CardScanSheetError.Type) -> StripeCardScan.CardScanSheetError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardScanSheetError",
+                    "printedName": "StripeCardScan.CardScanSheetError",
+                    "usr": "s:14StripeCardScan0bC10SheetErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCardScan.CardScanSheetError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardScanSheetError",
+                        "printedName": "StripeCardScan.CardScanSheetError",
+                        "usr": "s:14StripeCardScan0bC10SheetErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14StripeCardScan0bC10SheetErrorO19invalidClientSecretyA2CmF",
+            "mangledName": "$s14StripeCardScan0bC10SheetErrorO19invalidClientSecretyA2CmF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCardScan.CardScanSheetError.Type) -> (Swift.String) -> StripeCardScan.CardScanSheetError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> StripeCardScan.CardScanSheetError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardScanSheetError",
+                        "printedName": "StripeCardScan.CardScanSheetError",
+                        "usr": "s:14StripeCardScan0bC10SheetErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(debugDescription: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCardScan.CardScanSheetError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardScanSheetError",
+                        "printedName": "StripeCardScan.CardScanSheetError",
+                        "usr": "s:14StripeCardScan0bC10SheetErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14StripeCardScan0bC10SheetErrorO7unknownyACSS_tcACmF",
+            "mangledName": "$s14StripeCardScan0bC10SheetErrorO7unknownyACSS_tcACmF",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "localizedDescription",
+            "printedName": "localizedDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14StripeCardScan0bC10SheetErrorO20localizedDescriptionSSvp",
+            "mangledName": "$s14StripeCardScan0bC10SheetErrorO20localizedDescriptionSSvp",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14StripeCardScan0bC10SheetErrorO20localizedDescriptionSSvg",
+                "mangledName": "$s14StripeCardScan0bC10SheetErrorO20localizedDescriptionSSvg",
+                "moduleName": "StripeCardScan",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugDescription",
+            "printedName": "debugDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14StripeCardScan0bC10SheetErrorO16debugDescriptionSSvp",
+            "mangledName": "$s14StripeCardScan0bC10SheetErrorO16debugDescriptionSSvp",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14StripeCardScan0bC10SheetErrorO16debugDescriptionSSvg",
+                "mangledName": "$s14StripeCardScan0bC10SheetErrorO16debugDescriptionSSvg",
+                "moduleName": "StripeCardScan",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14StripeCardScan0bC10SheetErrorO",
+        "mangledName": "$s14StripeCardScan0bC10SheetErrorO",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScannedCard",
+        "printedName": "ScannedCard",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pan",
+            "printedName": "pan",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14StripeCardScan07ScannedB0V3panSSvp",
+            "mangledName": "$s14StripeCardScan07ScannedB0V3panSSvp",
+            "moduleName": "StripeCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14StripeCardScan07ScannedB0V3panSSvg",
+                "mangledName": "$s14StripeCardScan07ScannedB0V3panSSvg",
+                "moduleName": "StripeCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ScannedCard",
+                "printedName": "StripeCardScan.ScannedCard",
+                "usr": "s:14StripeCardScan07ScannedB0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ScannedCard",
+                "printedName": "StripeCardScan.ScannedCard",
+                "usr": "s:14StripeCardScan07ScannedB0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14StripeCardScan07ScannedB0V2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14StripeCardScan07ScannedB0V2eeoiySbAC_ACtFZ",
+            "moduleName": "StripeCardScan",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14StripeCardScan07ScannedB0V",
+        "mangledName": "$s14StripeCardScan07ScannedB0V",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "Exported"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UxAnalyzer",
+        "printedName": "UxAnalyzer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadModelFromBundle",
+            "printedName": "loadModelFromBundle()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "StripeCardScan.UxModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UxModel",
+                    "printedName": "StripeCardScan.UxModel",
+                    "usr": "s:14StripeCardScan7UxModelC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14StripeCardScan10UxAnalyzerC19loadModelFromBundleAA0dG0CSgyFZ",
+            "mangledName": "$s14StripeCardScan10UxAnalyzerC19loadModelFromBundleAA0dG0CSgyFZ",
+            "moduleName": "StripeCardScan",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14StripeCardScan10UxAnalyzerC",
+        "mangledName": "$s14StripeCardScan10UxAnalyzerC",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "superclassUsr": "s:14StripeCardScan06CreditB17OcrImplementationC",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "StripeCardScan.CreditCardOcrImplementation"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan"
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCardScan",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 149,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 169,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 183,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 201,
+      "length": 8,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 219,
+      "length": 3,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 232,
+      "length": 10,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 252,
+      "length": 8,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 270,
+      "length": 7,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 149,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 169,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 183,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 201,
+      "length": 8,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 219,
+      "length": 3,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 232,
+      "length": 10,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 252,
+      "length": 8,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 270,
+      "length": 7,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 149,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 169,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 183,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 201,
+      "length": 8,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 219,
+      "length": 3,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 232,
+      "length": 10,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 252,
+      "length": 8,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 270,
+      "length": 7,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 149,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 164,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 181,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 149,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 164,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 181,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 149,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 164,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CardType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 181,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 74,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 110,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 143,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 191,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 234,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "Array",
+      "offset": 287,
+      "length": 12,
+      "value": "[\"34\", \"37\"]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "Array",
+      "offset": 344,
+      "length": 82,
+      "value": "[\"300\", \"301\", \"302\", \"303\", \"304\", \"305\", \"309\", \"36\", \"38\", \"39\"]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "Array",
+      "offset": 469,
+      "length": 20,
+      "value": "[\"6011\", \"64\", \"65\"]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "Array",
+      "offset": 527,
+      "length": 6,
+      "value": "[\"35\"]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "Array",
+      "offset": 578,
+      "length": 256,
+      "value": "[\"2221\", \"2222\", \"2223\", \"2224\", \"2225\", \"2226\", \"2227\", \"2228\", \"2229\", \"223\", \"224\", \"225\", \"226\", \"227\", \"228\", \"229\", \"23\", \"24\", \"25\", \"26\", \"270\", \"271\", \"2720\", \"50\", \"51\", \"52\", \"53\", \"54\", \"55\", \"67\"]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "Array",
+      "offset": 877,
+      "length": 6,
+      "value": "[\"62\"]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "Array",
+      "offset": 922,
+      "length": 5,
+      "value": "[\"4\"]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CardUtils\/CreditCardUtils.swift",
+      "kind": "Array",
+      "offset": 973,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/CreditCardOcrImplementation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 441,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/CreditCardOcrImplementation.swift",
+      "kind": "FloatLiteral",
+      "offset": 469,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/CreditCardOcrResult.swift",
+      "kind": "StringLiteral",
+      "offset": 177,
+      "length": 19,
+      "value": "\"StripeCardScan.CreditCardOcrResult\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/ErrorCorrection.swift",
+      "kind": "IntegerLiteral",
+      "offset": 103,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/ErrorCorrection.swift",
+      "kind": "Dictionary",
+      "offset": 138,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/ErrorCorrection.swift",
+      "kind": "Dictionary",
+      "offset": 176,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/ErrorCorrection.swift",
+      "kind": "Dictionary",
+      "offset": 211,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/MainLoopStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 793,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/MainLoopStateMachine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1987,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/MainLoopStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 2027,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/MainLoopStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 2064,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/NonNameWords.swift",
+      "kind": "Array",
+      "offset": 215,
+      "length": 1033,
+      "value": "[\"customer\", \"debit\", \"visa\", \"mastercard\", \"navy\", \"american\", \"express\", \"thru\", \"good\", \"authorized\", \"signature\", \"wells\", \"navy\", \"credit\", \"federal\", \"union\", \"bank\", \"valid\", \"validfrom\", \"validthru\", \"llc\", \"business\", \"netspend\", \"goodthru\", \"chase\", \"fargo\", \"hsbc\", \"usaa\", \"chaseo\", \"commerce\", \"last\", \"of\", \"lastdayof\", \"check\", \"card\", \"inc\", \"first\", \"member\", \"since\", \"american\", \"express\", \"republic\", \"bmo\", \"capital\", \"one\", \"capitalone\", \"platinum\", \"expiry\", \"date\", \"expiration\", \"cash\", \"back\", \"td\", \"access\", \"international\", \"interac\", \"nterac\", \"entreprise\", \"business\", \"md\", \"enterprise\", \"fifth\", \"third\", \"fifththird\", \"world\", \"rewards\", \"citi\", \"member\", \"cardmember\", \"cardholder\", \"valued\", \"since\", \"membersince\", \"cardmembersince\", \"cardholdersince\", \"freedom\", \"quicksilver\", \"penfed\", \"use\", \"this\", \"card\", \"is\", \"subject\", \"to\", \"the\", \"inc\", \"not\", \"transferable\", \"gto\", \"mgy\", \"sign\"]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/OcrMainLoop.swift",
+      "kind": "Array",
+      "offset": 5404,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/OcrMainLoop.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5432,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/OcrMainLoop.swift",
+      "kind": "Array",
+      "offset": 5489,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/OcrMainLoop.swift",
+      "kind": "StringLiteral",
+      "offset": 5534,
+      "length": 18,
+      "value": "\"OcrMainLoopMutex\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/OcrMainLoop.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5577,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/OcrMainLoop.swift",
+      "kind": "Array",
+      "offset": 5632,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/OcrMainLoop.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5659,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/CreditCardOcr\/SSDCreditCardOcr.swift",
+      "kind": "StringLiteral",
+      "offset": 101,
+      "length": 16,
+      "value": "\"StripeCardScan.SSDCreditCardOcr\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/Extensions\/UIImage+pixelBuffer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6308,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/Extensions\/UIImage+pixelBuffer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6894,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLModels\/SSDOcr.swift",
+      "kind": "StringLiteral",
+      "offset": 2648,
+      "length": 8,
+      "value": "\"scores\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLModels\/SSDOcr.swift",
+      "kind": "StringLiteral",
+      "offset": 2955,
+      "length": 7,
+      "value": "\"boxes\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLModels\/SSDOcr.swift",
+      "kind": "StringLiteral",
+      "offset": 3262,
+      "length": 8,
+      "value": "\"filter\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLModels\/UxModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2645,
+      "length": 9,
+      "value": "\"output1\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/ActiveStateComputation.swift",
+      "kind": "Array",
+      "offset": 2114,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/ActiveStateComputation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2136,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/AppState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/AppState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 128,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/DetectedAllBoxes.swift",
+      "kind": "Array",
+      "offset": 219,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/DetectedAllOcrBoxes.swift",
+      "kind": "Array",
+      "offset": 192,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrDD.swift",
+      "kind": "Array",
+      "offset": 174,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrDDUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 150,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrDDUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 201,
+      "length": 3,
+      "value": "1.2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrDDUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 240,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrDDUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 281,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrDDUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 330,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 630,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 673,
+      "length": 2,
+      "value": "38"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 777,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 822,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 978,
+      "length": 2,
+      "value": "31"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1016,
+      "length": 2,
+      "value": "31"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1175,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1215,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1371,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1671,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1875,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1914,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1953,
+      "length": 2,
+      "value": "45"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "FloatLiteral",
+      "offset": 5658,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/OcrPriorsGen.swift",
+      "kind": "FloatLiteral",
+      "offset": 5680,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/PostDetectionAlgorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 477,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/PostDetectionAlgorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 504,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/PostDetectionAlgorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 534,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/PostDetectionAlgorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 567,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/PostDetectionAlgorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 599,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/PostDetectionAlgorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 641,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/PostDetectionAlgorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 681,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 8,
+      "value": "\"SSDOcr\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "StringLiteral",
+      "offset": 353,
+      "length": 10,
+      "value": "\"mlmodelc\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "FloatLiteral",
+      "offset": 423,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "IntegerLiteral",
+      "offset": 454,
+      "length": 3,
+      "value": "600"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "IntegerLiteral",
+      "offset": 486,
+      "length": 3,
+      "value": "375"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "FloatLiteral",
+      "offset": 521,
+      "length": 4,
+      "value": "0.45"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "FloatLiteral",
+      "offset": 559,
+      "length": 4,
+      "value": "0.39"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "FloatLiteral",
+      "offset": 594,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "FloatLiteral",
+      "offset": 630,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "FloatLiteral",
+      "offset": 664,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "IntegerLiteral",
+      "offset": 692,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "IntegerLiteral",
+      "offset": 711,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "Array",
+      "offset": 793,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/MLRuntime\/SSDOcrDetect.swift",
+      "kind": "BooleanLiteral",
+      "offset": 833,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/CardScanSheet.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1203,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
+      "length": 11,
+      "value": "\"UITesting\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 675,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 710,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 787,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 834,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 899,
+      "length": 17,
+      "value": "\"CardScanMlQueue\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 986,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1817,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1861,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1966,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2076,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanBaseViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 141,
+      "length": 22,
+      "value": "\"StripeCardScan.ScanBaseViewController\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 70,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 70,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 70,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 144,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 201,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanStats.swift",
+      "kind": "IntegerLiteral",
+      "offset": 193,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanStats.swift",
+      "kind": "IntegerLiteral",
+      "offset": 226,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanStats.swift",
+      "kind": "IntegerLiteral",
+      "offset": 257,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanStats.swift",
+      "kind": "IntegerLiteral",
+      "offset": 294,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanStats.swift",
+      "kind": "IntegerLiteral",
+      "offset": 329,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanStats.swift",
+      "kind": "BooleanLiteral",
+      "offset": 349,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanStats.swift",
+      "kind": "StringLiteral",
+      "offset": 377,
+      "length": 10,
+      "value": "\"Portrait\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanStats.swift",
+      "kind": "IntegerLiteral",
+      "offset": 686,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/ScanStats.swift",
+      "kind": "BooleanLiteral",
+      "offset": 750,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/SimpleScanViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 4680,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/VideoFeed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 347,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/UI\/VideoFeed.swift",
+      "kind": "StringLiteral",
+      "offset": 405,
+      "length": 15,
+      "value": "\"session queue\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/Utils\/AtomicPropertyWrapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 299,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardScan\/Utils\/DeviceUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 792,
+      "length": 5,
+      "value": "\"ios\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/CardImageVerificationDetailsResponse.swift",
+      "kind": "FloatLiteral",
+      "offset": 357,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/CardImageVerificationDetailsResponse.swift",
+      "kind": "Array",
+      "offset": 392,
+      "length": 12,
+      "value": "[1080, 1920]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/CardImageVerificationDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 484,
+      "length": 6,
+      "value": "\"heic\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/CardImageVerificationDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 507,
+      "length": 6,
+      "value": "\"jpeg\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/CardImageVerificationDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 530,
+      "length": 6,
+      "value": "\"webp\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/CardImageVerificationDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 484,
+      "length": 6,
+      "value": "\"heic\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/CardImageVerificationDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 507,
+      "length": 6,
+      "value": "\"jpeg\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/CardImageVerificationDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 530,
+      "length": 6,
+      "value": "\"webp\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/Models\/Scan Analytics\/ScanStatsPayload+Common.swift",
+      "kind": "StringLiteral",
+      "offset": 331,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/Models\/Scan Analytics\/ScanStatsPayload+Common.swift",
+      "kind": "StringLiteral",
+      "offset": 379,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/Models\/Scan Analytics\/ScanStatsPayload+Common.swift",
+      "kind": "StringLiteral",
+      "offset": 675,
+      "length": 10,
+      "value": "\"Redacted\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/Models\/Scan Analytics\/ScanStatsPayload+Common.swift",
+      "kind": "StringLiteral",
+      "offset": 813,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/Models\/Scan Analytics\/ScanStatsPayload+Common.swift",
+      "kind": "StringLiteral",
+      "offset": 891,
+      "length": 10,
+      "value": "\"Redacted\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Api\/Models\/Scan Analytics\/ScanStatsPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 590,
+      "length": 3,
+      "value": "\"2\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Bouncer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 427,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Bouncer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 530,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/CardImageVerificationController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1084,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/CardImageVerificationSheet.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2124,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/CardImageVerificationSheetConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1058,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/CardImageVerificationSheetConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1075,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/CardImageVerificationSheetConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1095,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/CardImageVerificationSheetConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1058,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/CardImageVerificationSheetConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1075,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/CardImageVerificationSheetConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1095,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/CardImageVerificationSheetConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1058,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/CardImageVerificationSheetConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1075,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/CardImageVerificationSheetConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1095,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Managers.swift",
+      "kind": "Array",
+      "offset": 541,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Managers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1729,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 246,
+      "length": 9,
+      "value": "\"success\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 9,
+      "value": "\"failure\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 11,
+      "value": "\"supported\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 351,
+      "length": 13,
+      "value": "\"unsupported\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 396,
+      "length": 23,
+      "value": "\"first_image_processed\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 446,
+      "length": 18,
+      "value": "\"ocr_pan_observed\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 488,
+      "length": 14,
+      "value": "\"card_scanned\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 532,
+      "length": 21,
+      "value": "\"enter_card_manually\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 573,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 607,
+      "length": 15,
+      "value": "\"user_canceled\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 650,
+      "length": 19,
+      "value": "\"user_missing_card\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 246,
+      "length": 9,
+      "value": "\"success\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 9,
+      "value": "\"failure\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 11,
+      "value": "\"supported\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 351,
+      "length": 13,
+      "value": "\"unsupported\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 396,
+      "length": 23,
+      "value": "\"first_image_processed\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 446,
+      "length": 18,
+      "value": "\"ocr_pan_observed\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 488,
+      "length": 14,
+      "value": "\"card_scanned\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 532,
+      "length": 21,
+      "value": "\"enter_card_manually\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 573,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 607,
+      "length": 15,
+      "value": "\"user_canceled\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "StringLiteral",
+      "offset": 650,
+      "length": 19,
+      "value": "\"user_missing_card\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager+Tasks.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1764,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Card Image Verification\/ScanAnalyticsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 450,
+      "length": 44,
+      "value": "\"com.stripe.ScanAnalyticsManager.MutexQueue\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardBase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 246,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardBase.swift",
+      "kind": "StringLiteral",
+      "offset": 105,
+      "length": 8,
+      "value": "\"StripeCardScan.CardBase\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "StringLiteral",
+      "offset": 1345,
+      "length": 29,
+      "value": "\"Completion loop mutex queue\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1429,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "Array",
+      "offset": 1485,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "Array",
+      "offset": 1544,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "Array",
+      "offset": 1595,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "Array",
+      "offset": 1659,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "Array",
+      "offset": 1720,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "Array",
+      "offset": 1779,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1802,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1829,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1879,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanFraudData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1913,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardScanMisc.swift",
+      "kind": "StringLiteral",
+      "offset": 208,
+      "length": 10,
+      "value": "\"StripeCardScan.CreditCard\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyFraudData.swift",
+      "kind": "Array",
+      "offset": 517,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyFraudData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 636,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyFraudData.swift",
+      "kind": "StringLiteral",
+      "offset": 25,
+      "length": 19,
+      "value": "\"StripeCardScan.CardVerifyFraudData\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 794,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 838,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 880,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 930,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 972,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 1015,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "StringLiteral",
+      "offset": 556,
+      "length": 22,
+      "value": "\"StripeCardScan.CardVerifyStateMachine\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6189,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6220,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6256,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 6304,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 6346,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 6396,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 6438,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 6481,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "FloatLiteral",
+      "offset": 6521,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/CardVerifyStateMachine.swift",
+      "kind": "StringLiteral",
+      "offset": 5943,
+      "length": 30,
+      "value": "\"StripeCardScan.CardVerifyAccurateStateMachine\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/FadeInAnimation.swift",
+      "kind": "FloatLiteral",
+      "offset": 165,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/FadeInAnimation.swift",
+      "kind": "FloatLiteral",
+      "offset": 561,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/FadeInAnimation.swift",
+      "kind": "FloatLiteral",
+      "offset": 984,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/FadeInAnimation.swift",
+      "kind": "FloatLiteral",
+      "offset": 1399,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Helpers\/EndToEndTestDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 22,
+      "value": "\"synthetic_test_image\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/Helpers\/EndToEndTestDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 450,
+      "length": 5,
+      "value": "\"jpg\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 282,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 294,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 300,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 310,
+      "length": 8,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 320,
+      "length": 7,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 282,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 294,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 300,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 310,
+      "length": 8,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 320,
+      "length": 7,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 282,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 294,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 300,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 310,
+      "length": 8,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 320,
+      "length": 7,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/PaymentCard.swift",
+      "kind": "StringLiteral",
+      "offset": 120,
+      "length": 11,
+      "value": "\"StripeCardScan.PaymentCard\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/StripeCardScanBundleLocator.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 16,
+      "value": "\"StripeCardScan\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/UxAnalyzer.swift",
+      "kind": "StringLiteral",
+      "offset": 246,
+      "length": 9,
+      "value": "\"UxModel\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/UxAnalyzer.swift",
+      "kind": "StringLiteral",
+      "offset": 285,
+      "length": 10,
+      "value": "\"mlmodelc\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/UxAnalyzer.swift",
+      "kind": "StringLiteral",
+      "offset": 133,
+      "length": 10,
+      "value": "\"StripeCardScan.UxAnalyzer\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/UxAnalyzer.swift",
+      "kind": "StringLiteral",
+      "offset": 133,
+      "length": 10,
+      "value": "\"StripeCardScan.UxAnalyzer\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/UxAndOcrMainLoop.swift",
+      "kind": "StringLiteral",
+      "offset": 6,
+      "length": 16,
+      "value": "\"StripeCardScan.UxAndOcrMainLoop\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/VerifyCardAddViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 599,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/VerifyCardAddViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 837,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/VerifyCardAddViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 293,
+      "length": 27,
+      "value": "\"StripeCardScan.VerifyCardAddViewController\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/VerifyCardViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2330,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/VerifyCardViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1533,
+      "length": 24,
+      "value": "\"StripeCardScan.VerifyCardViewController\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/ZoomedInCGImage.swift",
+      "kind": "FloatLiteral",
+      "offset": 515,
+      "length": 5,
+      "value": "448.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/ZoomedInCGImage.swift",
+      "kind": "FloatLiteral",
+      "offset": 564,
+      "length": 5,
+      "value": "448.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/ZoomedInCGImage.swift",
+      "kind": "FloatLiteral",
+      "offset": 614,
+      "length": 5,
+      "value": "112.0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCardScan\/StripeCardScan\/Source\/CardVerify\/ZoomedInCGImage.swift",
+      "kind": "FloatLiteral",
+      "offset": 688,
+      "length": 5,
+      "value": "112.0"
+    }
+  ]
+}

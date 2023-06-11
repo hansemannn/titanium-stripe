@@ -6,6 +6,6 @@ framework module StripeUICore {
 }
 
 module StripeUICore.Swift {
-    header "StripeUICore-Swift.h"
-    requires objc
+  header "StripeUICore-Swift.h"
+  requires objc
 }

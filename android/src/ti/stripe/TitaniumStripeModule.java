@@ -10,143 +10,100 @@ package ti.stripe;
 
 import androidx.activity.ComponentActivity;
 
+import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.annotations.Kroll;
 
+import org.appcelerator.kroll.common.Log;
 import org.appcelerator.titanium.TiApplication;
-import org.appcelerator.kroll.common.TiConfig;
 
-import com.stripe.android.CustomerSession;
 import com.stripe.android.PaymentConfiguration;
-import com.stripe.android.PaymentSession;
-import com.stripe.android.PaymentSessionConfig;
-import com.stripe.android.PaymentSessionData;
-import com.stripe.android.model.Address;
-import com.stripe.android.model.PaymentMethod;
-import com.stripe.android.model.ShippingInformation;
-import com.stripe.android.view.ShippingInfoWidget;
-
-import java.util.Arrays;
+import com.stripe.android.paymentsheet.PaymentSheet;
+import com.stripe.android.paymentsheet.PaymentSheetResult;
 
 @Kroll.module(name="TitaniumStripe", id="ti.stripe")
 public class TitaniumStripeModule extends KrollModule {
 
-	// Standard Debugging variables
-	private static final String LCAT = "TitaniumStripeModule";
-	private static final boolean DBG = TiConfig.LOGD;
-
-	private String ephemeralKeyAPIURL = "";
-	private PaymentSession paymentSession;
+	private PaymentSheet paymentSheet;
+	private String publishableKey = "";
 
 	@Kroll.method
 	public void initialize(KrollDict params) {
-		String publishableKey = params.getString("publishableKey");
-		ephemeralKeyAPIURL = params.getString("ephemeralKeyAPIURL");
+		publishableKey = params.getString("publishableKey");
+		PaymentConfiguration.init(TiApplication.getAppRootOrCurrentActivity(), publishableKey);
+	}
+
+	@Kroll.method
+	public void showPaymentSheet(KrollDict params) {
+		KrollFunction callback = (KrollFunction) params.get("callback");
+		String merchantDisplayName = params.getString("merchantDisplayName");
+		String customerId = params.getString("customerId");
+		String customerEphemeralKeySecret = params.getString("customerEphemeralKeySecret");
+		String paymentIntentClientSecret = params.getString("paymentIntentClientSecret");
+		KrollDict appearance = params.getKrollDict("appearance");
+
+		if (callback == null || customerId == null || customerEphemeralKeySecret == null || paymentIntentClientSecret == null) {
+			Log.e("TiStripe", "Missing required parameters: callback, customerId, customerEphemeralKeySecret or paymentIntentClientSecret");
+			return;
+		}
+
+		PaymentSheet.CustomerConfiguration customerConfig = new PaymentSheet.CustomerConfiguration(
+				customerId,
+				customerEphemeralKeySecret
+		);
 		PaymentConfiguration.init(TiApplication.getInstance().getApplicationContext(), publishableKey);
 
-		// Create the PaymentSession
-		paymentSession = new PaymentSession((ComponentActivity) TiApplication.getAppCurrentActivity(), createPaymentSessionConfig());
+		PaymentSheet.Configuration.Builder configuration = new PaymentSheet.Configuration.Builder("Example, Inc.")
+				.customer(customerConfig)
+				// Set `allowsDelayedPaymentMethods` to true if your business can handle payment methods
+				// that complete payment after a delay, like SEPA Debit and Sofort.
+				.allowsDelayedPaymentMethods(true);
 
-		// Attach your listener
-		paymentSession.init(createPaymentSessionListener());
+		if (merchantDisplayName != null)	 {
+			configuration.merchantDisplayName(merchantDisplayName);
+		}
 
-		CustomerSession.initCustomerSession(
-				TiApplication.getAppRootOrCurrentActivity().getApplicationContext(),
-				new TiEphemeralKeyProvider()
+		if (appearance != null) {
+			configuration.appearance(mappedAppearance(appearance));
+		}
+
+		paymentSheet = new PaymentSheet((ComponentActivity) TiApplication.getAppRootOrCurrentActivity(), paymentSheetResult -> {
+			KrollDict event = new KrollDict();
+
+			if (paymentSheetResult instanceof PaymentSheetResult.Canceled) {
+				event.put("cancel", true);
+			} else if (paymentSheetResult instanceof PaymentSheetResult.Failed) {
+				event.put("success", false);
+				event.put("error", ((PaymentSheetResult.Failed) paymentSheetResult).getError());
+			} else if (paymentSheetResult instanceof PaymentSheetResult.Completed) {
+				event.put("success", true);
+			}
+
+			callback.callAsync(getKrollObject(), event);
+		});
+
+		paymentSheet.presentWithPaymentIntent(
+				paymentIntentClientSecret,
+				configuration.build()
 		);
 	}
 
-	@Kroll.method
-	public void updatePaymentDetails(KrollDict params) {
-		// TODO
-	}
+	private PaymentSheet.Appearance mappedAppearance(KrollDict params) {
+		PaymentSheet.Appearance appearance = new PaymentSheet.Appearance();
 
-	@Kroll.method
-	public void requestPayment(KrollDict params) {
-		// TODO
-	}
+		KrollDict colors = params.getKrollDict("colors");
+		KrollDict font = params.getKrollDict("font");
 
-	// Helper
+		if (colors != null) {
+			// TODO
+		}
 
-	private PaymentSessionConfig createPaymentSessionConfig() {
-		return new PaymentSessionConfig.Builder()
+		if (font != null) {
+			// TODO
+		}
 
-				// hide the phone field on the shipping information form
-				.setHiddenShippingInfoFields(
-						ShippingInfoWidget.CustomizableShippingField.Phone
-				)
-
-				// make the address line 2 field optional
-				.setOptionalShippingInfoFields(
-						ShippingInfoWidget.CustomizableShippingField.Line2
-				)
-
-				// specify an address to pre-populate the shipping information form
-				.setPrepopulatedShippingInfo(new ShippingInformation(
-						new Address.Builder()
-								.setLine1("123 Market St")
-								.setCity("San Francisco")
-								.setState("CA")
-								.setPostalCode("94107")
-								.setCountry("US")
-								.build(),
-						"Jenny Rosen",
-						"4158675309")
-				)
-
-				// collect shipping information
-				.setShippingInfoRequired(true)
-
-				// collect shipping method
-				.setShippingMethodsRequired(true)
-
-				// specify the payment method types that the customer can use;
-				// defaults to PaymentMethod.Type.Card
-				.setPaymentMethodTypes(
-						Arrays.asList(PaymentMethod.Type.Card)
-				)
-
-				// if `true`, will show "Google Pay" as an option on the
-				// Payment Methods selection screen
-				.setShouldShowGooglePay(true)
-
-				.build();
-	}
-
-	private PaymentSession.PaymentSessionListener createPaymentSessionListener() {
-		return new PaymentSession.PaymentSessionListener() {
-			@Override
-			public void onPaymentSessionDataChanged(PaymentSessionData data) {
-				if (data.getUseGooglePay()) {
-					// customer intends to pay with Google Pay
-				} else {
-					final PaymentMethod paymentMethod = data.getPaymentMethod();
-					if (paymentMethod != null) {
-						// Display information about the selected payment method
-					}
-				}
-
-				// Update your UI here with other data
-				if (data.isPaymentReadyToCharge()) {
-					// Use the data to complete your charge - see below.
-				}
-			}
-
-			@Override
-			public void onCommunicatingStateChanged(boolean isCommunicating) {
-				if (isCommunicating) {
-					// update UI to indicate that network communication is in progress
-				} else {
-					// update UI to indicate that network communication has completed
-				}
-			}
-
-			@Override
-			public void onError(int errorCode, String errorMessage) {
-				// handle error
-			}
-		};
+		return appearance;
 	}
 }
 

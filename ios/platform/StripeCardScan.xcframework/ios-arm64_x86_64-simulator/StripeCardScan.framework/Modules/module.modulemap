@@ -6,6 +6,6 @@ framework module StripeCardScan {
 }
 
 module StripeCardScan.Swift {
-    header "StripeCardScan-Swift.h"
-    requires objc
+  header "StripeCardScan-Swift.h"
+  requires objc
 }
