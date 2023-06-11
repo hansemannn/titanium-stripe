@@ -8,7 +8,8 @@
  */
 package ti.stripe;
 
-import androidx.activity.ComponentActivity;
+import android.app.Activity;
+import android.content.Intent;
 
 import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.KrollModule;
@@ -17,93 +18,70 @@ import org.appcelerator.kroll.annotations.Kroll;
 
 import org.appcelerator.kroll.common.Log;
 import org.appcelerator.titanium.TiApplication;
+import org.appcelerator.titanium.util.TiActivityResultHandler;
+import org.appcelerator.titanium.util.TiActivitySupport;
 
 import com.stripe.android.PaymentConfiguration;
-import com.stripe.android.paymentsheet.PaymentSheet;
-import com.stripe.android.paymentsheet.PaymentSheetResult;
 
 @Kroll.module(name="TitaniumStripe", id="ti.stripe")
-public class TitaniumStripeModule extends KrollModule {
-
-	private PaymentSheet paymentSheet;
-	private String publishableKey = "";
+public class TitaniumStripeModule extends KrollModule implements TiActivityResultHandler {
+	private KrollFunction callback = null;
 
 	@Kroll.method
 	public void initialize(KrollDict params) {
-		publishableKey = params.getString("publishableKey");
+		String publishableKey = params.getString("publishableKey");
 		PaymentConfiguration.init(TiApplication.getAppRootOrCurrentActivity(), publishableKey);
 	}
 
 	@Kroll.method
 	public void showPaymentSheet(KrollDict params) {
-		KrollFunction callback = (KrollFunction) params.get("callback");
+		callback = (KrollFunction) params.get("callback");
+
 		String merchantDisplayName = params.getString("merchantDisplayName");
 		String customerId = params.getString("customerId");
 		String customerEphemeralKeySecret = params.getString("customerEphemeralKeySecret");
 		String paymentIntentClientSecret = params.getString("paymentIntentClientSecret");
-		KrollDict appearance = params.getKrollDict("appearance");
 
-		if (callback == null || customerId == null || customerEphemeralKeySecret == null || paymentIntentClientSecret == null) {
+		if (callback == null || merchantDisplayName == null || customerId == null || customerEphemeralKeySecret == null || paymentIntentClientSecret == null) {
 			Log.e("TiStripe", "Missing required parameters: callback, customerId, customerEphemeralKeySecret or paymentIntentClientSecret");
 			return;
 		}
 
-		PaymentSheet.CustomerConfiguration customerConfig = new PaymentSheet.CustomerConfiguration(
-				customerId,
-				customerEphemeralKeySecret
-		);
-		PaymentConfiguration.init(TiApplication.getInstance().getApplicationContext(), publishableKey);
+		params.remove("callback");
 
-		PaymentSheet.Configuration.Builder configuration = new PaymentSheet.Configuration.Builder("Example, Inc.")
-				.customer(customerConfig)
-				// Set `allowsDelayedPaymentMethods` to true if your business can handle payment methods
-				// that complete payment after a delay, like SEPA Debit and Sofort.
-				.allowsDelayedPaymentMethods(true);
+		Intent intent = new Intent(TiApplication.getAppCurrentActivity(), TiStripeHostActivity.class);
+		intent.putExtra("params", params);
 
-		if (merchantDisplayName != null)	 {
-			configuration.merchantDisplayName(merchantDisplayName);
-		}
-
-		if (appearance != null) {
-			configuration.appearance(mappedAppearance(appearance));
-		}
-
-		paymentSheet = new PaymentSheet((ComponentActivity) TiApplication.getAppRootOrCurrentActivity(), paymentSheetResult -> {
-			KrollDict event = new KrollDict();
-
-			if (paymentSheetResult instanceof PaymentSheetResult.Canceled) {
-				event.put("cancel", true);
-			} else if (paymentSheetResult instanceof PaymentSheetResult.Failed) {
-				event.put("success", false);
-				event.put("error", ((PaymentSheetResult.Failed) paymentSheetResult).getError());
-			} else if (paymentSheetResult instanceof PaymentSheetResult.Completed) {
-				event.put("success", true);
-			}
-
-			callback.callAsync(getKrollObject(), event);
-		});
-
-		paymentSheet.presentWithPaymentIntent(
-				paymentIntentClientSecret,
-				configuration.build()
-		);
+		TiActivitySupport support = (TiActivitySupport) TiApplication.getInstance().getCurrentActivity();
+		support.launchActivityForResult(intent, support.getUniqueResultCode(), this);
 	}
 
-	private PaymentSheet.Appearance mappedAppearance(KrollDict params) {
-		PaymentSheet.Appearance appearance = new PaymentSheet.Appearance();
-
-		KrollDict colors = params.getKrollDict("colors");
-		KrollDict font = params.getKrollDict("font");
-
-		if (colors != null) {
-			// TODO
+	@Override
+	public void onResult(Activity activity, int i, int i1, Intent intent) {
+		if (intent == null) {
+			return;
 		}
 
-		if (font != null) {
-			// TODO
-		}
+		boolean success = intent.getBooleanExtra("success", false);
+		boolean cancel = intent.getBooleanExtra("cancel", false);
+		String error = intent.getStringExtra("error");
 
-		return appearance;
+		KrollDict event = new KrollDict();
+		event.put("success", success);
+		event.put("cancel", cancel);
+		event.put("error", error);
+
+		callback.callAsync(getKrollObject(), event);
+	}
+
+	@Override
+	public void onError(Activity activity, int i, Exception e) {
+		KrollDict event = new KrollDict();
+		event.put("success", false);
+		event.put("cancel", false);
+		event.put("error", e.getMessage());
+
+		callback.callAsync(getKrollObject(), event);
 	}
 }
 
