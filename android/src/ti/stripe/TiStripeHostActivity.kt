@@ -3,6 +3,8 @@ package ti.stripe
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowManager
 import androidx.activity.ComponentActivity
 import com.stripe.android.paymentsheet.PaymentSheet
 import com.stripe.android.paymentsheet.PaymentSheetResult
@@ -14,6 +16,11 @@ class TiStripeHostActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Configure activity layout (in addition to the style)
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        title = ""
 
         params = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             intent.getSerializableExtra("params", HashMap::class.java)!!
