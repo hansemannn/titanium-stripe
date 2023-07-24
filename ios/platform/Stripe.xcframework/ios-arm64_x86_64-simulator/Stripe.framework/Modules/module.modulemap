@@ -6,6 +6,6 @@ framework module Stripe {
 }
 
 module Stripe.Swift {
-    header "Stripe-Swift.h"
-    requires objc
+  header "Stripe-Swift.h"
+  requires objc
 }

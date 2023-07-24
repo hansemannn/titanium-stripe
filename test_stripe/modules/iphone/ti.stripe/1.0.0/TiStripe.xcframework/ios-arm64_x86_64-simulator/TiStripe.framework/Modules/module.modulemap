@@ -1,0 +1,11 @@
+framework module TiStripe {
+  umbrella header "TiStripe.h"
+
+  export *
+  module * { export * }
+}
+
+module TiStripe.Swift {
+  header "TiStripe-Swift.h"
+  requires objc
+}

@@ -1,0 +1,112 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name StripeCardScan
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+import Accelerate
+import CoreGraphics
+import CoreML
+import CoreTelephony
+import Foundation
+@_exported import StripeCardScan
+@_exported @_spi(STP) import StripeCore
+import Swift
+import UIKit
+import VideoToolbox
+import Vision
+import _Concurrency
+import _StringProcessing
+import os.log
+import os
+@_spi(STP) @_hasMissingDesignatedInitializers public class CreditCardOcrImplementation {
+  @_spi(STP) @objc deinit
+}
+@_spi(STP) @_hasMissingDesignatedInitializers @available(macOS 10.13.2, iOS 11.2, tvOS 11.2, watchOS 4.2, *)
+public class SSDOcr {
+  @_spi(STP) @objc deinit
+}
+@_spi(STP) @_hasMissingDesignatedInitializers @available(macOS 10.13.2, iOS 11.2, tvOS 11.2, watchOS 4.2, *)
+public class UxModel {
+  @_spi(STP) @objc deinit
+}
+@_spi(STP) @_hasMissingDesignatedInitializers public class SSDOcrDetect {
+  @_spi(STP) public static func loadModelFromBundle() -> StripeCardScan.SSDOcr?
+  @_spi(STP) @objc deinit
+}
+@frozen public enum CardScanSheetResult {
+  case completed(card: StripeCardScan.ScannedCard)
+  case canceled
+  case failed(error: Swift.Error)
+}
+public class CardScanSheet {
+  public init()
+  @available(iOSApplicationExtension, unavailable)
+  @available(macCatalystApplicationExtension, unavailable)
+  public func present(from presentingViewController: UIKit.UIViewController, completion: @escaping (StripeCardScan.CardScanSheetResult) -> Swift.Void, animated: Swift.Bool = true)
+  @objc deinit
+}
+public enum CancellationReason : Swift.String, Swift.Equatable {
+  case back
+  case closed
+  case userCannotScan
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@frozen public enum CardImageVerificationSheetResult {
+  case completed(scannedCard: StripeCardScan.ScannedCard)
+  case canceled(reason: StripeCardScan.CancellationReason)
+  case failed(error: Swift.Error)
+}
+final public class CardImageVerificationSheet {
+  public init(cardImageVerificationIntentId: Swift.String, cardImageVerificationIntentSecret: Swift.String, configuration: StripeCardScan.CardImageVerificationSheet.Configuration = Configuration())
+  final public func present(from presentingViewController: UIKit.UIViewController, completion: @escaping (StripeCardScan.CardImageVerificationSheetResult) -> Swift.Void, animated: Swift.Bool = true)
+  @objc deinit
+}
+extension StripeCardScan.CardImageVerificationSheet {
+  public struct Configuration {
+    public var apiClient: StripeCore.STPAPIClient
+    @_spi(STP) public var strictModeFrames: StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount
+    public init()
+  }
+  @_spi(STP) public enum StrictModeFrameCount : Swift.Int, Swift.Equatable {
+    @_spi(STP) case none
+    @_spi(STP) case low
+    @_spi(STP) case medium
+    @_spi(STP) case high
+    @_spi(STP) public init?(rawValue: Swift.Int)
+    @_spi(STP) public typealias RawValue = Swift.Int
+    @_spi(STP) public var rawValue: Swift.Int {
+      @_spi(STP) get
+    }
+  }
+}
+public enum CardScanSheetError : Swift.Error {
+  case invalidClientSecret
+  case unknown(debugDescription: Swift.String)
+}
+extension StripeCardScan.CardScanSheetError : Foundation.LocalizedError {
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+extension StripeCardScan.CardScanSheetError : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public struct ScannedCard : Swift.Equatable {
+  public let pan: Swift.String
+  public static func == (a: StripeCardScan.ScannedCard, b: StripeCardScan.ScannedCard) -> Swift.Bool
+}
+@_spi(STP) @_hasMissingDesignatedInitializers public class UxAnalyzer : StripeCardScan.CreditCardOcrImplementation {
+  @_spi(STP) public static func loadModelFromBundle() -> StripeCardScan.UxModel?
+  @_spi(STP) @objc deinit
+}
+extension StripeCardScan.CancellationReason : Swift.Hashable {}
+extension StripeCardScan.CancellationReason : Swift.RawRepresentable {}
+extension StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount : Swift.Hashable {}
+extension StripeCardScan.CardImageVerificationSheet.StrictModeFrameCount : Swift.RawRepresentable {}

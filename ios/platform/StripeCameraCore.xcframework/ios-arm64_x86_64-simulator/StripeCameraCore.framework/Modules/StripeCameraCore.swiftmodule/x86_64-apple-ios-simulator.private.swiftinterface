@@ -1,0 +1,170 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name StripeCameraCore
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+import CoreGraphics
+import CoreMedia
+import CoreVideo
+import Foundation
+import ImageIO
+@_exported import StripeCameraCore
+@_spi(STP) import StripeCore
+import Swift
+import UIKit
+import VideoToolbox
+import _Concurrency
+import _StringProcessing
+@_spi(STP) public struct CameraExifMetadata : Swift.Equatable {
+  @_spi(STP) public let brightnessValue: Swift.Double?
+  @_spi(STP) public let focalLength: Swift.Double?
+  @_spi(STP) public let lensModel: Swift.String?
+  @_spi(STP) public static func == (a: StripeCameraCore.CameraExifMetadata, b: StripeCameraCore.CameraExifMetadata) -> Swift.Bool
+}
+@_spi(STP) extension StripeCameraCore.CameraExifMetadata {
+  @_spi(STP) public init?(exifDictionary: [CoreFoundation.CFString : Any]?)
+  @_spi(STP) public init?(sampleBuffer: CoreMedia.CMSampleBuffer)
+}
+@_spi(STP) extension CoreFoundation.CGRect {
+  @_spi(STP) public static let normalizedBounds: CoreFoundation.CGRect
+  @_spi(STP) public var invertedNormalizedCoordinates: CoreFoundation.CGRect {
+    @_spi(STP) get
+  }
+  @_spi(STP) public func convertFromNormalizedCenterCropSquare(toOriginalSize originalSize: CoreFoundation.CGSize) -> CoreFoundation.CGRect
+}
+@_spi(STP) extension CoreVideo.CVBuffer {
+  @_spi(STP) public func cgImage() -> CoreGraphics.CGImage?
+}
+@_spi(STP) extension UIKit.UIDeviceOrientation {
+  @_spi(STP) public var videoOrientation: AVFoundation.AVCaptureVideoOrientation {
+    @_spi(STP) get
+  }
+}
+extension UIKit.UIImage {
+  @_spi(STP) public func convertToPixelBuffer() -> CoreVideo.CVPixelBuffer?
+  @_spi(STP) public func convertToSampleBuffer() -> CoreMedia.CMSampleBuffer?
+}
+public protocol AppSettingsHelperProtocol {
+  var canOpenAppSettings: Swift.Bool { get }
+  func openAppSettings()
+}
+@_spi(STP) @_hasMissingDesignatedInitializers @available(iOSApplicationExtension, unavailable)
+public class AppSettingsHelper : StripeCameraCore.AppSettingsHelperProtocol {
+  @_spi(STP) public static let shared: StripeCameraCore.AppSettingsHelper
+  @_spi(STP) public var canOpenAppSettings: Swift.Bool {
+    @_spi(STP) get
+  }
+  @_spi(STP) public func openAppSettings()
+  @_spi(STP) @objc deinit
+}
+@_spi(STP) public protocol CameraPermissionsManagerProtocol {
+  @_spi(STP) typealias CompletionBlock = (_ granted: Swift.Bool?) -> Swift.Void
+  @_spi(STP) var hasCameraAccess: Swift.Bool { get }
+  @_spi(STP) func requestCameraAccess(completeOnQueue queue: Dispatch.DispatchQueue, completion: @escaping Self.CompletionBlock)
+}
+@_spi(STP) @_hasMissingDesignatedInitializers final public class CameraPermissionsManager : StripeCameraCore.CameraPermissionsManagerProtocol {
+  @_spi(STP) public static let shared: StripeCameraCore.CameraPermissionsManager
+  @_spi(STP) final public var hasCameraAccess: Swift.Bool {
+    @_spi(STP) get
+  }
+  @_spi(STP) final public func requestCameraAccess(completeOnQueue queue: Dispatch.DispatchQueue = .main, completion: @escaping StripeCameraCore.CameraPermissionsManager.CompletionBlock)
+  @_spi(STP) @objc deinit
+}
+@_spi(STP) @frozen public enum CameraSessionError : Swift.Error {
+  @_spi(STP) case captureDeviceNotFound
+  @_spi(STP) case configurationFailed
+  @_spi(STP) public static func == (a: StripeCameraCore.CameraSessionError, b: StripeCameraCore.CameraSessionError) -> Swift.Bool
+  @_spi(STP) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(STP) public var hashValue: Swift.Int {
+    @_spi(STP) get
+  }
+}
+@_spi(STP) public protocol CameraSessionProtocol : AnyObject {
+  @_spi(STP) var previewView: StripeCameraCore.CameraPreviewView? { get set }
+  @_spi(STP) func configureSession(configuration: StripeCameraCore.CameraSession.Configuration, delegate: AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate, completeOn queue: Dispatch.DispatchQueue, completion: @escaping (StripeCameraCore.CameraSession.SetupResult) -> Swift.Void)
+  @_spi(STP) func setVideoOrientation(orientation: AVFoundation.AVCaptureVideoOrientation)
+  @_spi(STP) func toggleCamera(to position: StripeCameraCore.CameraSession.CameraPosition, completeOn queue: Dispatch.DispatchQueue, completion: @escaping (StripeCameraCore.CameraSession.SetupResult) -> Swift.Void)
+  @_spi(STP) func toggleTorch()
+  @_spi(STP) func getCameraProperties() -> StripeCameraCore.CameraSession.DeviceProperties?
+  @_spi(STP) func startSession(completeOn queue: Dispatch.DispatchQueue, completion: @escaping () -> Swift.Void)
+  @_spi(STP) func stopSession(completeOn queue: Dispatch.DispatchQueue, completion: @escaping () -> Swift.Void)
+}
+@_spi(STP) final public class CameraSession : StripeCameraCore.CameraSessionProtocol {
+  @_spi(STP) @frozen public enum SetupResult {
+    @_spi(STP) case success
+    @_spi(STP) case failed(error: Swift.Error)
+  }
+  @_spi(STP) public enum CameraPosition {
+    @_spi(STP) case front
+    @_spi(STP) case back
+    @_spi(STP) public static func == (a: StripeCameraCore.CameraSession.CameraPosition, b: StripeCameraCore.CameraSession.CameraPosition) -> Swift.Bool
+    @_spi(STP) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(STP) public var hashValue: Swift.Int {
+      @_spi(STP) get
+    }
+  }
+  @_spi(STP) public struct Configuration {
+    @_spi(STP) public let initialCameraPosition: StripeCameraCore.CameraSession.CameraPosition
+    @_spi(STP) public let initialOrientation: AVFoundation.AVCaptureVideoOrientation
+    @_spi(STP) public let focusMode: AVFoundation.AVCaptureDevice.FocusMode?
+    @_spi(STP) public let focusPointOfInterest: CoreFoundation.CGPoint?
+    @_spi(STP) public let sessionPreset: AVFoundation.AVCaptureSession.Preset
+    @_spi(STP) public let outputSettings: [Swift.String : Any]
+    @_spi(STP) public init(initialCameraPosition: StripeCameraCore.CameraSession.CameraPosition, initialOrientation: AVFoundation.AVCaptureVideoOrientation, focusMode: AVFoundation.AVCaptureDevice.FocusMode? = nil, focusPointOfInterest: CoreFoundation.CGPoint? = nil, sessionPreset: AVFoundation.AVCaptureSession.Preset = .high, outputSettings: [Swift.String : Any] = [:])
+  }
+  @_spi(STP) public struct DeviceProperties : Swift.Equatable {
+    @_spi(STP) public let exposureDuration: CoreMedia.CMTime
+    @_spi(STP) public let cameraDeviceType: AVFoundation.AVCaptureDevice.DeviceType
+    @_spi(STP) public let isVirtualDevice: Swift.Bool?
+    @_spi(STP) public let lensPosition: Swift.Float
+    @_spi(STP) public let exposureISO: Swift.Float
+    @_spi(STP) public let isAdjustingFocus: Swift.Bool
+    @_spi(STP) public static func == (a: StripeCameraCore.CameraSession.DeviceProperties, b: StripeCameraCore.CameraSession.DeviceProperties) -> Swift.Bool
+  }
+  @_spi(STP) weak final public var previewView: StripeCameraCore.CameraPreviewView? {
+    @_spi(STP) get
+    @_spi(STP) set
+  }
+  @_spi(STP) public init()
+  @_spi(STP) final public func configureSession(configuration: StripeCameraCore.CameraSession.Configuration, delegate: AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate, completeOn queue: Dispatch.DispatchQueue, completion: @escaping (StripeCameraCore.CameraSession.SetupResult) -> Swift.Void)
+  @_spi(STP) final public func setFocus(focusMode: AVFoundation.AVCaptureDevice.FocusMode, focusPointOfInterest: CoreFoundation.CGPoint? = nil, completion: @escaping (Swift.Error?) -> Swift.Void)
+  @_spi(STP) final public func setVideoOrientation(orientation: AVFoundation.AVCaptureVideoOrientation)
+  @_spi(STP) final public func getCameraProperties() -> StripeCameraCore.CameraSession.DeviceProperties?
+  @_spi(STP) final public func toggleCamera(to position: StripeCameraCore.CameraSession.CameraPosition, completeOn queue: Dispatch.DispatchQueue, completion: @escaping (StripeCameraCore.CameraSession.SetupResult) -> Swift.Void)
+  @_spi(STP) final public func toggleTorch()
+  @_spi(STP) final public func startSession(completeOn queue: Dispatch.DispatchQueue, completion: @escaping () -> Swift.Void)
+  @_spi(STP) final public func stopSession(completeOn queue: Dispatch.DispatchQueue, completion: @escaping () -> Swift.Void)
+  @_spi(STP) @objc deinit
+}
+@_spi(STP) final public class MockSimulatorCameraSession : StripeCameraCore.CameraSessionProtocol {
+  @_spi(STP) weak final public var previewView: StripeCameraCore.CameraPreviewView? {
+    @_spi(STP) get
+    @_spi(STP) set
+  }
+  @_spi(STP) public init(images: [UIKit.UIImage])
+  @_spi(STP) final public func configureSession(configuration: StripeCameraCore.CameraSession.Configuration, delegate: AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate, completeOn queue: Dispatch.DispatchQueue, completion: @escaping (StripeCameraCore.CameraSession.SetupResult) -> Swift.Void)
+  @_spi(STP) final public func setVideoOrientation(orientation: AVFoundation.AVCaptureVideoOrientation)
+  @_spi(STP) final public func toggleCamera(to position: StripeCameraCore.CameraSession.CameraPosition, completeOn queue: Dispatch.DispatchQueue, completion: @escaping (StripeCameraCore.CameraSession.SetupResult) -> Swift.Void)
+  @_spi(STP) final public func getCameraProperties() -> StripeCameraCore.CameraSession.DeviceProperties?
+  @_spi(STP) final public func toggleTorch()
+  @_spi(STP) final public func startSession(completeOn queue: Dispatch.DispatchQueue, completion: @escaping () -> Swift.Void)
+  @_spi(STP) final public func stopSession(completeOn queue: Dispatch.DispatchQueue, completion: @escaping () -> Swift.Void)
+  @_spi(STP) @objc deinit
+}
+@_spi(STP) @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CameraPreviewView : UIKit.UIView {
+  @_spi(STP) @_Concurrency.MainActor(unsafe) weak public var session: StripeCameraCore.CameraSessionProtocol? {
+    @_spi(STP) get
+    @_spi(STP) set
+  }
+  @_spi(STP) @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_spi(STP) @_Concurrency.MainActor(unsafe) @objc override dynamic public class var layerClass: Swift.AnyClass {
+    @_spi(STP) @objc get
+  }
+  @_spi(STP) @objc deinit
+}
+extension StripeCameraCore.CameraSessionError : Swift.Equatable {}
+extension StripeCameraCore.CameraSessionError : Swift.Hashable {}
+extension StripeCameraCore.CameraSession.SetupResult : Swift.Sendable {}
+extension StripeCameraCore.CameraSession.CameraPosition : Swift.Equatable {}
+extension StripeCameraCore.CameraSession.CameraPosition : Swift.Hashable {}

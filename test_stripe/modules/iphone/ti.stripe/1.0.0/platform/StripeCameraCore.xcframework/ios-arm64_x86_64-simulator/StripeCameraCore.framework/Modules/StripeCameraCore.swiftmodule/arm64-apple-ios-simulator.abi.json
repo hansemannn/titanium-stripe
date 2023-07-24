@@ -1,0 +1,5061 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "Import",
+        "name": "ImageIO",
+        "printedName": "ImageIO",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraExifMetadata",
+        "printedName": "CameraExifMetadata",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "brightnessValue",
+            "printedName": "brightnessValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore0B12ExifMetadataV15brightnessValueSdSgvp",
+            "mangledName": "$s16StripeCameraCore0B12ExifMetadataV15brightnessValueSdSgvp",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B12ExifMetadataV15brightnessValueSdSgvg",
+                "mangledName": "$s16StripeCameraCore0B12ExifMetadataV15brightnessValueSdSgvg",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "focalLength",
+            "printedName": "focalLength",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore0B12ExifMetadataV11focalLengthSdSgvp",
+            "mangledName": "$s16StripeCameraCore0B12ExifMetadataV11focalLengthSdSgvp",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B12ExifMetadataV11focalLengthSdSgvg",
+                "mangledName": "$s16StripeCameraCore0B12ExifMetadataV11focalLengthSdSgvg",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lensModel",
+            "printedName": "lensModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore0B12ExifMetadataV9lensModelSSSgvp",
+            "mangledName": "$s16StripeCameraCore0B12ExifMetadataV9lensModelSSSgvp",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B12ExifMetadataV9lensModelSSSgvg",
+                "mangledName": "$s16StripeCameraCore0B12ExifMetadataV9lensModelSSSgvg",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraExifMetadata",
+                "printedName": "StripeCameraCore.CameraExifMetadata",
+                "usr": "s:16StripeCameraCore0B12ExifMetadataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraExifMetadata",
+                "printedName": "StripeCameraCore.CameraExifMetadata",
+                "usr": "s:16StripeCameraCore0B12ExifMetadataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B12ExifMetadataV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s16StripeCameraCore0B12ExifMetadataV2eeoiySbAC_ACtFZ",
+            "moduleName": "StripeCameraCore",
+            "static": true,
+            "implicit": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(exifDictionary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "StripeCameraCore.CameraExifMetadata?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraExifMetadata",
+                    "printedName": "StripeCameraCore.CameraExifMetadata",
+                    "usr": "s:16StripeCameraCore0B12ExifMetadataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[CoreFoundation.CFString : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[CoreFoundation.CFString : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CFString",
+                        "printedName": "CoreFoundation.CFString",
+                        "usr": "c:@T@CFStringRef"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16StripeCameraCore0B12ExifMetadataV14exifDictionaryACSgSDySo11CFStringRefaypGSg_tcfc",
+            "mangledName": "$s16StripeCameraCore0B12ExifMetadataV14exifDictionaryACSgSDySo11CFStringRefaypGSg_tcfc",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sampleBuffer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "StripeCameraCore.CameraExifMetadata?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraExifMetadata",
+                    "printedName": "StripeCameraCore.CameraExifMetadata",
+                    "usr": "s:16StripeCameraCore0B12ExifMetadataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16StripeCameraCore0B12ExifMetadataV12sampleBufferACSgSo08CMSampleG3Refa_tcfc",
+            "mangledName": "$s16StripeCameraCore0B12ExifMetadataV12sampleBufferACSgSo08CMSampleG3Refa_tcfc",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16StripeCameraCore0B12ExifMetadataV",
+        "mangledName": "$s16StripeCameraCore0B12ExifMetadataV",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VideoToolbox",
+        "printedName": "VideoToolbox",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppSettingsHelperProtocol",
+        "printedName": "AppSettingsHelperProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "canOpenAppSettings",
+            "printedName": "canOpenAppSettings",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore25AppSettingsHelperProtocolP07canOpendE0Sbvp",
+            "mangledName": "$s16StripeCameraCore25AppSettingsHelperProtocolP07canOpendE0Sbvp",
+            "moduleName": "StripeCameraCore",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore25AppSettingsHelperProtocolP07canOpendE0Sbvg",
+                "mangledName": "$s16StripeCameraCore25AppSettingsHelperProtocolP07canOpendE0Sbvg",
+                "moduleName": "StripeCameraCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.AppSettingsHelperProtocol>",
+                "sugared_genericSig": "<Self where Self : StripeCameraCore.AppSettingsHelperProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "openAppSettings",
+            "printedName": "openAppSettings()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore25AppSettingsHelperProtocolP04opendE0yyF",
+            "mangledName": "$s16StripeCameraCore25AppSettingsHelperProtocolP04opendE0yyF",
+            "moduleName": "StripeCameraCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.AppSettingsHelperProtocol>",
+            "sugared_genericSig": "<Self where Self : StripeCameraCore.AppSettingsHelperProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16StripeCameraCore25AppSettingsHelperProtocolP",
+        "mangledName": "$s16StripeCameraCore25AppSettingsHelperProtocolP",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppSettingsHelper",
+        "printedName": "AppSettingsHelper",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppSettingsHelper",
+                "printedName": "StripeCameraCore.AppSettingsHelper",
+                "usr": "s:16StripeCameraCore17AppSettingsHelperC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore17AppSettingsHelperC6sharedACvpZ",
+            "mangledName": "$s16StripeCameraCore17AppSettingsHelperC6sharedACvpZ",
+            "moduleName": "StripeCameraCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppSettingsHelper",
+                    "printedName": "StripeCameraCore.AppSettingsHelper",
+                    "usr": "s:16StripeCameraCore17AppSettingsHelperC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore17AppSettingsHelperC6sharedACvgZ",
+                "mangledName": "$s16StripeCameraCore17AppSettingsHelperC6sharedACvgZ",
+                "moduleName": "StripeCameraCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "canOpenAppSettings",
+            "printedName": "canOpenAppSettings",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore17AppSettingsHelperC07canOpendE0Sbvp",
+            "mangledName": "$s16StripeCameraCore17AppSettingsHelperC07canOpendE0Sbvp",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore17AppSettingsHelperC07canOpendE0Sbvg",
+                "mangledName": "$s16StripeCameraCore17AppSettingsHelperC07canOpendE0Sbvg",
+                "moduleName": "StripeCameraCore",
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "openAppSettings",
+            "printedName": "openAppSettings()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore17AppSettingsHelperC04opendE0yyF",
+            "mangledName": "$s16StripeCameraCore17AppSettingsHelperC04opendE0yyF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16StripeCameraCore17AppSettingsHelperC",
+        "mangledName": "$s16StripeCameraCore17AppSettingsHelperC",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "Available",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AppSettingsHelperProtocol",
+            "printedName": "AppSettingsHelperProtocol",
+            "usr": "s:16StripeCameraCore25AppSettingsHelperProtocolP",
+            "mangledName": "$s16StripeCameraCore25AppSettingsHelperProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraPermissionsManagerProtocol",
+        "printedName": "CameraPermissionsManagerProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "hasCameraAccess",
+            "printedName": "hasCameraAccess",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore0B26PermissionsManagerProtocolP03hasB6AccessSbvp",
+            "mangledName": "$s16StripeCameraCore0B26PermissionsManagerProtocolP03hasB6AccessSbvp",
+            "moduleName": "StripeCameraCore",
+            "protocolReq": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B26PermissionsManagerProtocolP03hasB6AccessSbvg",
+                "mangledName": "$s16StripeCameraCore0B26PermissionsManagerProtocolP03hasB6AccessSbvg",
+                "moduleName": "StripeCameraCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraPermissionsManagerProtocol>",
+                "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraPermissionsManagerProtocol>",
+                "protocolReq": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "requestCameraAccess",
+            "printedName": "requestCameraAccess(completeOnQueue:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B26PermissionsManagerProtocolP07requestB6Access15completeOnQueue10completionySo17OS_dispatch_queueC_ySbSgctF",
+            "mangledName": "$s16StripeCameraCore0B26PermissionsManagerProtocolP07requestB6Access15completeOnQueue10completionySo17OS_dispatch_queueC_ySbSgctF",
+            "moduleName": "StripeCameraCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraPermissionsManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraPermissionsManagerProtocol>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16StripeCameraCore0B26PermissionsManagerProtocolP",
+        "mangledName": "$s16StripeCameraCore0B26PermissionsManagerProtocolP",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "STP"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraPermissionsManager",
+        "printedName": "CameraPermissionsManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraPermissionsManager",
+                "printedName": "StripeCameraCore.CameraPermissionsManager",
+                "usr": "s:16StripeCameraCore0B18PermissionsManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore0B18PermissionsManagerC6sharedACvpZ",
+            "mangledName": "$s16StripeCameraCore0B18PermissionsManagerC6sharedACvpZ",
+            "moduleName": "StripeCameraCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPermissionsManager",
+                    "printedName": "StripeCameraCore.CameraPermissionsManager",
+                    "usr": "s:16StripeCameraCore0B18PermissionsManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B18PermissionsManagerC6sharedACvgZ",
+                "mangledName": "$s16StripeCameraCore0B18PermissionsManagerC6sharedACvgZ",
+                "moduleName": "StripeCameraCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hasCameraAccess",
+            "printedName": "hasCameraAccess",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore0B18PermissionsManagerC03hasB6AccessSbvp",
+            "mangledName": "$s16StripeCameraCore0B18PermissionsManagerC03hasB6AccessSbvp",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B18PermissionsManagerC03hasB6AccessSbvg",
+                "mangledName": "$s16StripeCameraCore0B18PermissionsManagerC03hasB6AccessSbvg",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "requestCameraAccess",
+            "printedName": "requestCameraAccess(completeOnQueue:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B18PermissionsManagerC07requestB6Access15completeOnQueue10completionySo17OS_dispatch_queueC_ySbSgctF",
+            "mangledName": "$s16StripeCameraCore0B18PermissionsManagerC07requestB6Access15completeOnQueue10completionySo17OS_dispatch_queueC_ySbSgctF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16StripeCameraCore0B18PermissionsManagerC",
+        "mangledName": "$s16StripeCameraCore0B18PermissionsManagerC",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CameraPermissionsManagerProtocol",
+            "printedName": "CameraPermissionsManagerProtocol",
+            "usr": "s:16StripeCameraCore0B26PermissionsManagerProtocolP",
+            "mangledName": "$s16StripeCameraCore0B26PermissionsManagerProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraSessionError",
+        "printedName": "CameraSessionError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "captureDeviceNotFound",
+            "printedName": "captureDeviceNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCameraCore.CameraSessionError.Type) -> StripeCameraCore.CameraSessionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraSessionError",
+                    "printedName": "StripeCameraCore.CameraSessionError",
+                    "usr": "s:16StripeCameraCore0B12SessionErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCameraCore.CameraSessionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraSessionError",
+                        "printedName": "StripeCameraCore.CameraSessionError",
+                        "usr": "s:16StripeCameraCore0B12SessionErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16StripeCameraCore0B12SessionErrorO21captureDeviceNotFoundyA2CmF",
+            "mangledName": "$s16StripeCameraCore0B12SessionErrorO21captureDeviceNotFoundyA2CmF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 0,
+            "spi_group_names": [
+              "STP"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "configurationFailed",
+            "printedName": "configurationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCameraCore.CameraSessionError.Type) -> StripeCameraCore.CameraSessionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraSessionError",
+                    "printedName": "StripeCameraCore.CameraSessionError",
+                    "usr": "s:16StripeCameraCore0B12SessionErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StripeCameraCore.CameraSessionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraSessionError",
+                        "printedName": "StripeCameraCore.CameraSessionError",
+                        "usr": "s:16StripeCameraCore0B12SessionErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16StripeCameraCore0B12SessionErrorO19configurationFailedyA2CmF",
+            "mangledName": "$s16StripeCameraCore0B12SessionErrorO19configurationFailedyA2CmF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 1,
+            "spi_group_names": [
+              "STP"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraSessionError",
+                "printedName": "StripeCameraCore.CameraSessionError",
+                "usr": "s:16StripeCameraCore0B12SessionErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraSessionError",
+                "printedName": "StripeCameraCore.CameraSessionError",
+                "usr": "s:16StripeCameraCore0B12SessionErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B12SessionErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s16StripeCameraCore0B12SessionErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "StripeCameraCore",
+            "static": true,
+            "implicit": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore0B12SessionErrorO9hashValueSivp",
+            "mangledName": "$s16StripeCameraCore0B12SessionErrorO9hashValueSivp",
+            "moduleName": "StripeCameraCore",
+            "implicit": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B12SessionErrorO9hashValueSivg",
+                "mangledName": "$s16StripeCameraCore0B12SessionErrorO9hashValueSivg",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B12SessionErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s16StripeCameraCore0B12SessionErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "StripeCameraCore",
+            "implicit": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16StripeCameraCore0B12SessionErrorO",
+        "mangledName": "$s16StripeCameraCore0B12SessionErrorO",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraSessionProtocol",
+        "printedName": "CameraSessionProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "previewView",
+            "printedName": "previewView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "StripeCameraCore.CameraPreviewView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPreviewView",
+                    "printedName": "StripeCameraCore.CameraPreviewView",
+                    "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore0B15SessionProtocolP11previewViewAA0b7PreviewG0CSgvp",
+            "mangledName": "$s16StripeCameraCore0B15SessionProtocolP11previewViewAA0b7PreviewG0CSgvp",
+            "moduleName": "StripeCameraCore",
+            "protocolReq": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "StripeCameraCore.CameraPreviewView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPreviewView",
+                        "printedName": "StripeCameraCore.CameraPreviewView",
+                        "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B15SessionProtocolP11previewViewAA0b7PreviewG0CSgvg",
+                "mangledName": "$s16StripeCameraCore0B15SessionProtocolP11previewViewAA0b7PreviewG0CSgvg",
+                "moduleName": "StripeCameraCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraSessionProtocol>",
+                "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraSessionProtocol>",
+                "protocolReq": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "StripeCameraCore.CameraPreviewView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPreviewView",
+                        "printedName": "StripeCameraCore.CameraPreviewView",
+                        "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B15SessionProtocolP11previewViewAA0b7PreviewG0CSgvs",
+                "mangledName": "$s16StripeCameraCore0B15SessionProtocolP11previewViewAA0b7PreviewG0CSgvs",
+                "moduleName": "StripeCameraCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraSessionProtocol>",
+                "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraSessionProtocol>",
+                "protocolReq": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B15SessionProtocolP11previewViewAA0b7PreviewG0CSgvM",
+                "mangledName": "$s16StripeCameraCore0B15SessionProtocolP11previewViewAA0b7PreviewG0CSgvM",
+                "moduleName": "StripeCameraCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraSessionProtocol>",
+                "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraSessionProtocol>",
+                "protocolReq": true,
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configureSession",
+            "printedName": "configureSession(configuration:delegate:completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "StripeCameraCore.CameraSession.Configuration",
+                "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureVideoDataOutputSampleBufferDelegate",
+                "printedName": "AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate",
+                "usr": "c:objc(pl)AVCaptureVideoDataOutputSampleBufferDelegate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCameraCore.CameraSession.SetupResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SetupResult",
+                    "printedName": "StripeCameraCore.CameraSession.SetupResult",
+                    "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B15SessionProtocolP09configureD013configuration8delegate10completeOn10completionyAA0bD0C13ConfigurationV_So44AVCaptureVideoDataOutputSampleBufferDelegate_pSo17OS_dispatch_queueCyAJ11SetupResultOctF",
+            "mangledName": "$s16StripeCameraCore0B15SessionProtocolP09configureD013configuration8delegate10completeOn10completionyAA0bD0C13ConfigurationV_So44AVCaptureVideoDataOutputSampleBufferDelegate_pSo17OS_dispatch_queueCyAJ11SetupResultOctF",
+            "moduleName": "StripeCameraCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraSessionProtocol>",
+            "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraSessionProtocol>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVideoOrientation",
+            "printedName": "setVideoOrientation(orientation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureVideoOrientation",
+                "printedName": "AVFoundation.AVCaptureVideoOrientation",
+                "usr": "c:@E@AVCaptureVideoOrientation"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B15SessionProtocolP19setVideoOrientation11orientationySo09AVCapturegH0V_tF",
+            "mangledName": "$s16StripeCameraCore0B15SessionProtocolP19setVideoOrientation11orientationySo09AVCapturegH0V_tF",
+            "moduleName": "StripeCameraCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraSessionProtocol>",
+            "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraSessionProtocol>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleCamera",
+            "printedName": "toggleCamera(to:completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraPosition",
+                "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCameraCore.CameraSession.SetupResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SetupResult",
+                    "printedName": "StripeCameraCore.CameraSession.SetupResult",
+                    "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B15SessionProtocolP06toggleB02to10completeOn10completionyAA0bD0C0B8PositionO_So17OS_dispatch_queueCyAI11SetupResultOctF",
+            "mangledName": "$s16StripeCameraCore0B15SessionProtocolP06toggleB02to10completeOn10completionyAA0bD0C0B8PositionO_So17OS_dispatch_queueCyAI11SetupResultOctF",
+            "moduleName": "StripeCameraCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraSessionProtocol>",
+            "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraSessionProtocol>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleTorch",
+            "printedName": "toggleTorch()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B15SessionProtocolP11toggleTorchyyF",
+            "mangledName": "$s16StripeCameraCore0B15SessionProtocolP11toggleTorchyyF",
+            "moduleName": "StripeCameraCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraSessionProtocol>",
+            "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraSessionProtocol>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCameraProperties",
+            "printedName": "getCameraProperties()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "StripeCameraCore.CameraSession.DeviceProperties?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceProperties",
+                    "printedName": "StripeCameraCore.CameraSession.DeviceProperties",
+                    "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B15SessionProtocolP03getB10PropertiesAA0bD0C06DeviceG0VSgyF",
+            "mangledName": "$s16StripeCameraCore0B15SessionProtocolP03getB10PropertiesAA0bD0C06DeviceG0VSgyF",
+            "moduleName": "StripeCameraCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraSessionProtocol>",
+            "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraSessionProtocol>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startSession",
+            "printedName": "startSession(completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B15SessionProtocolP05startD010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "mangledName": "$s16StripeCameraCore0B15SessionProtocolP05startD010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "moduleName": "StripeCameraCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraSessionProtocol>",
+            "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraSessionProtocol>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopSession",
+            "printedName": "stopSession(completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B15SessionProtocolP04stopD010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "mangledName": "$s16StripeCameraCore0B15SessionProtocolP04stopD010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "moduleName": "StripeCameraCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : StripeCameraCore.CameraSessionProtocol>",
+            "sugared_genericSig": "<Self where Self : StripeCameraCore.CameraSessionProtocol>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16StripeCameraCore0B15SessionProtocolP",
+        "mangledName": "$s16StripeCameraCore0B15SessionProtocolP",
+        "moduleName": "StripeCameraCore",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "STP"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraSession",
+        "printedName": "CameraSession",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "SetupResult",
+            "printedName": "SetupResult",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "success",
+                "printedName": "success",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StripeCameraCore.CameraSession.SetupResult.Type) -> StripeCameraCore.CameraSession.SetupResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SetupResult",
+                        "printedName": "StripeCameraCore.CameraSession.SetupResult",
+                        "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StripeCameraCore.CameraSession.SetupResult.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SetupResult",
+                            "printedName": "StripeCameraCore.CameraSession.SetupResult",
+                            "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO7successyA2EmF",
+                "mangledName": "$s16StripeCameraCore0B7SessionC11SetupResultO7successyA2EmF",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "fixedbinaryorder": 0,
+                "spi_group_names": [
+                  "STP"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "failed",
+                "printedName": "failed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StripeCameraCore.CameraSession.SetupResult.Type) -> (Swift.Error) -> StripeCameraCore.CameraSession.SetupResult",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Error) -> StripeCameraCore.CameraSession.SetupResult",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SetupResult",
+                            "printedName": "StripeCameraCore.CameraSession.SetupResult",
+                            "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(error: Swift.Error)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StripeCameraCore.CameraSession.SetupResult.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SetupResult",
+                            "printedName": "StripeCameraCore.CameraSession.SetupResult",
+                            "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO6failedyAEs5Error_p_tcAEmF",
+                "mangledName": "$s16StripeCameraCore0B7SessionC11SetupResultO6failedyAEs5Error_p_tcAEmF",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "fixedbinaryorder": 1,
+                "spi_group_names": [
+                  "STP"
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO",
+            "mangledName": "$s16StripeCameraCore0B7SessionC11SetupResultO",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl",
+              "Frozen"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "isEnumExhaustive": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CameraPosition",
+            "printedName": "CameraPosition",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "front",
+                "printedName": "front",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StripeCameraCore.CameraSession.CameraPosition.Type) -> StripeCameraCore.CameraSession.CameraPosition",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPosition",
+                        "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                        "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StripeCameraCore.CameraSession.CameraPosition.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CameraPosition",
+                            "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                            "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO5frontyA2EmF",
+                "mangledName": "$s16StripeCameraCore0B7SessionC0B8PositionO5frontyA2EmF",
+                "moduleName": "StripeCameraCore",
+                "spi_group_names": [
+                  "STP"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "back",
+                "printedName": "back",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StripeCameraCore.CameraSession.CameraPosition.Type) -> StripeCameraCore.CameraSession.CameraPosition",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPosition",
+                        "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                        "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StripeCameraCore.CameraSession.CameraPosition.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CameraPosition",
+                            "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                            "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO4backyA2EmF",
+                "mangledName": "$s16StripeCameraCore0B7SessionC0B8PositionO4backyA2EmF",
+                "moduleName": "StripeCameraCore",
+                "spi_group_names": [
+                  "STP"
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPosition",
+                    "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                    "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPosition",
+                    "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                    "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s16StripeCameraCore0B7SessionC0B8PositionO2eeoiySbAE_AEtFZ",
+                "moduleName": "StripeCameraCore",
+                "static": true,
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO9hashValueSivp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC0B8PositionO9hashValueSivp",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO9hashValueSivg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC0B8PositionO9hashValueSivg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s16StripeCameraCore0B7SessionC0B8PositionO4hash4intoys6HasherVz_tF",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO",
+            "mangledName": "$s16StripeCameraCore0B7SessionC0B8PositionO",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Configuration",
+            "printedName": "Configuration",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "initialCameraPosition",
+                "printedName": "initialCameraPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPosition",
+                    "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                    "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV07initialB8PositionAC0bG0Ovp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV07initialB8PositionAC0bG0Ovp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPosition",
+                        "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                        "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV07initialB8PositionAC0bG0Ovg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV07initialB8PositionAC0bG0Ovg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "initialOrientation",
+                "printedName": "initialOrientation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVCaptureVideoOrientation",
+                    "printedName": "AVFoundation.AVCaptureVideoOrientation",
+                    "usr": "c:@E@AVCaptureVideoOrientation"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV18initialOrientationSo014AVCaptureVideoG0Vvp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV18initialOrientationSo014AVCaptureVideoG0Vvp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCaptureVideoOrientation",
+                        "printedName": "AVFoundation.AVCaptureVideoOrientation",
+                        "usr": "c:@E@AVCaptureVideoOrientation"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV18initialOrientationSo014AVCaptureVideoG0Vvg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV18initialOrientationSo014AVCaptureVideoG0Vvg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "focusMode",
+                "printedName": "focusMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVCaptureDevice.FocusMode?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FocusMode",
+                        "printedName": "AVFoundation.AVCaptureDevice.FocusMode",
+                        "usr": "c:@E@AVCaptureFocusMode"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV9focusModeSo014AVCaptureFocusG0VSgvp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV9focusModeSo014AVCaptureFocusG0VSgvp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "AVFoundation.AVCaptureDevice.FocusMode?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FocusMode",
+                            "printedName": "AVFoundation.AVCaptureDevice.FocusMode",
+                            "usr": "c:@E@AVCaptureFocusMode"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV9focusModeSo014AVCaptureFocusG0VSgvg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV9focusModeSo014AVCaptureFocusG0VSgvg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "focusPointOfInterest",
+                "printedName": "focusPointOfInterest",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreFoundation.CGPoint?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGPoint",
+                        "printedName": "CoreFoundation.CGPoint",
+                        "usr": "c:@S@CGPoint"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV20focusPointOfInterestSo7CGPointVSgvp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV20focusPointOfInterestSo7CGPointVSgvp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "CoreFoundation.CGPoint?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGPoint",
+                            "printedName": "CoreFoundation.CGPoint",
+                            "usr": "c:@S@CGPoint"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV20focusPointOfInterestSo7CGPointVSgvg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV20focusPointOfInterestSo7CGPointVSgvg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "sessionPreset",
+                "printedName": "sessionPreset",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Preset",
+                    "printedName": "AVFoundation.AVCaptureSession.Preset",
+                    "usr": "c:@T@AVCaptureSessionPreset"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV13sessionPresetSo09AVCapturedG0avp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV13sessionPresetSo09AVCapturedG0avp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Preset",
+                        "printedName": "AVFoundation.AVCaptureSession.Preset",
+                        "usr": "c:@T@AVCaptureSessionPreset"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV13sessionPresetSo09AVCapturedG0avg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV13sessionPresetSo09AVCapturedG0avg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "outputSettings",
+                "printedName": "outputSettings",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV14outputSettingsSDySSypGvp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV14outputSettingsSDySSypGvp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV14outputSettingsSDySSypGvg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV14outputSettingsSDySSypGvg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(initialCameraPosition:initialOrientation:focusMode:focusPointOfInterest:sessionPreset:outputSettings:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Configuration",
+                    "printedName": "StripeCameraCore.CameraSession.Configuration",
+                    "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPosition",
+                    "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                    "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVCaptureVideoOrientation",
+                    "printedName": "AVFoundation.AVCaptureVideoOrientation",
+                    "usr": "c:@E@AVCaptureVideoOrientation"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVCaptureDevice.FocusMode?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FocusMode",
+                        "printedName": "AVFoundation.AVCaptureDevice.FocusMode",
+                        "usr": "c:@E@AVCaptureFocusMode"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreFoundation.CGPoint?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGPoint",
+                        "printedName": "CoreFoundation.CGPoint",
+                        "usr": "c:@S@CGPoint"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Preset",
+                    "printedName": "AVFoundation.AVCaptureSession.Preset",
+                    "hasDefaultArg": true,
+                    "usr": "c:@T@AVCaptureSessionPreset"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV07initialB8Position0F11Orientation9focusMode0I15PointOfInterest13sessionPreset14outputSettingsAeC0bG0O_So014AVCaptureVideoH0VSo0r5FocusJ0VSgSo7CGPointVSgSo0rdO0aSDySSypGtcfc",
+                "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV07initialB8Position0F11Orientation9focusMode0I15PointOfInterest13sessionPreset14outputSettingsAeC0bG0O_So014AVCaptureVideoH0VSo0r5FocusJ0VSgSo7CGPointVSgSo0rdO0aSDySSypGtcfc",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV",
+            "mangledName": "$s16StripeCameraCore0B7SessionC13ConfigurationV",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "DeviceProperties",
+            "printedName": "DeviceProperties",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "exposureDuration",
+                "printedName": "exposureDuration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTime",
+                    "printedName": "CoreMedia.CMTime",
+                    "usr": "c:@SA@CMTime"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV16exposureDurationSo6CMTimeavp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV16exposureDurationSo6CMTimeavp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTime",
+                        "printedName": "CoreMedia.CMTime",
+                        "usr": "c:@SA@CMTime"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV16exposureDurationSo6CMTimeavg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV16exposureDurationSo6CMTimeavg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "cameraDeviceType",
+                "printedName": "cameraDeviceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceType",
+                    "printedName": "AVFoundation.AVCaptureDevice.DeviceType",
+                    "usr": "c:@T@AVCaptureDeviceType"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV06cameraE4TypeSo09AVCaptureeH0avp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV06cameraE4TypeSo09AVCaptureeH0avp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceType",
+                        "printedName": "AVFoundation.AVCaptureDevice.DeviceType",
+                        "usr": "c:@T@AVCaptureDeviceType"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV06cameraE4TypeSo09AVCaptureeH0avg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV06cameraE4TypeSo09AVCaptureeH0avg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isVirtualDevice",
+                "printedName": "isVirtualDevice",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV09isVirtualE0SbSgvp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV09isVirtualE0SbSgvp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV09isVirtualE0SbSgvg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV09isVirtualE0SbSgvg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "lensPosition",
+                "printedName": "lensPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV12lensPositionSfvp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV12lensPositionSfvp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV12lensPositionSfvg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV12lensPositionSfvg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "exposureISO",
+                "printedName": "exposureISO",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV11exposureISOSfvp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV11exposureISOSfvp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV11exposureISOSfvg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV11exposureISOSfvg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isAdjustingFocus",
+                "printedName": "isAdjustingFocus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV16isAdjustingFocusSbvp",
+                "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV16isAdjustingFocusSbvp",
+                "moduleName": "StripeCameraCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV16isAdjustingFocusSbvg",
+                    "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV16isAdjustingFocusSbvg",
+                    "moduleName": "StripeCameraCore",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "STP"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceProperties",
+                    "printedName": "StripeCameraCore.CameraSession.DeviceProperties",
+                    "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceProperties",
+                    "printedName": "StripeCameraCore.CameraSession.DeviceProperties",
+                    "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV2eeoiySbAE_AEtFZ",
+                "moduleName": "StripeCameraCore",
+                "static": true,
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV",
+            "mangledName": "$s16StripeCameraCore0B7SessionC16DevicePropertiesV",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "previewView",
+            "printedName": "previewView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "StripeCameraCore.CameraPreviewView?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore0B7SessionC11previewViewAA0b7PreviewF0CSgvp",
+            "mangledName": "$s16StripeCameraCore0B7SessionC11previewViewAA0b7PreviewF0CSgvp",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "spi_group_names": [
+              "STP"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "StripeCameraCore.CameraPreviewView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPreviewView",
+                        "printedName": "StripeCameraCore.CameraPreviewView",
+                        "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B7SessionC11previewViewAA0b7PreviewF0CSgvg",
+                "mangledName": "$s16StripeCameraCore0B7SessionC11previewViewAA0b7PreviewF0CSgvg",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "StripeCameraCore.CameraPreviewView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPreviewView",
+                        "printedName": "StripeCameraCore.CameraPreviewView",
+                        "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B7SessionC11previewViewAA0b7PreviewF0CSgvs",
+                "mangledName": "$s16StripeCameraCore0B7SessionC11previewViewAA0b7PreviewF0CSgvs",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B7SessionC11previewViewAA0b7PreviewF0CSgvM",
+                "mangledName": "$s16StripeCameraCore0B7SessionC11previewViewAA0b7PreviewF0CSgvM",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraSession",
+                "printedName": "StripeCameraCore.CameraSession",
+                "usr": "s:16StripeCameraCore0B7SessionC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16StripeCameraCore0B7SessionCACycfc",
+            "mangledName": "$s16StripeCameraCore0B7SessionCACycfc",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "configureSession",
+            "printedName": "configureSession(configuration:delegate:completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "StripeCameraCore.CameraSession.Configuration",
+                "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureVideoDataOutputSampleBufferDelegate",
+                "printedName": "AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate",
+                "usr": "c:objc(pl)AVCaptureVideoDataOutputSampleBufferDelegate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCameraCore.CameraSession.SetupResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SetupResult",
+                    "printedName": "StripeCameraCore.CameraSession.SetupResult",
+                    "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B7SessionC09configureD013configuration8delegate10completeOn10completionyAC13ConfigurationV_So44AVCaptureVideoDataOutputSampleBufferDelegate_pSo17OS_dispatch_queueCyAC11SetupResultOctF",
+            "mangledName": "$s16StripeCameraCore0B7SessionC09configureD013configuration8delegate10completeOn10completionyAC13ConfigurationV_So44AVCaptureVideoDataOutputSampleBufferDelegate_pSo17OS_dispatch_queueCyAC11SetupResultOctF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setFocus",
+            "printedName": "setFocus(focusMode:focusPointOfInterest:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FocusMode",
+                "printedName": "AVFoundation.AVCaptureDevice.FocusMode",
+                "usr": "c:@E@AVCaptureFocusMode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGPoint?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPoint",
+                    "printedName": "CoreFoundation.CGPoint",
+                    "usr": "c:@S@CGPoint"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Error?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B7SessionC8setFocus9focusMode0G15PointOfInterest10completionySo09AVCapturefH0V_So7CGPointVSgys5Error_pSgctF",
+            "mangledName": "$s16StripeCameraCore0B7SessionC8setFocus9focusMode0G15PointOfInterest10completionySo09AVCapturefH0V_So7CGPointVSgys5Error_pSgctF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVideoOrientation",
+            "printedName": "setVideoOrientation(orientation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureVideoOrientation",
+                "printedName": "AVFoundation.AVCaptureVideoOrientation",
+                "usr": "c:@E@AVCaptureVideoOrientation"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B7SessionC19setVideoOrientation11orientationySo09AVCapturefG0V_tF",
+            "mangledName": "$s16StripeCameraCore0B7SessionC19setVideoOrientation11orientationySo09AVCapturefG0V_tF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCameraProperties",
+            "printedName": "getCameraProperties()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "StripeCameraCore.CameraSession.DeviceProperties?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceProperties",
+                    "printedName": "StripeCameraCore.CameraSession.DeviceProperties",
+                    "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B7SessionC03getB10PropertiesAC06DeviceF0VSgyF",
+            "mangledName": "$s16StripeCameraCore0B7SessionC03getB10PropertiesAC06DeviceF0VSgyF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleCamera",
+            "printedName": "toggleCamera(to:completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraPosition",
+                "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCameraCore.CameraSession.SetupResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SetupResult",
+                    "printedName": "StripeCameraCore.CameraSession.SetupResult",
+                    "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B7SessionC06toggleB02to10completeOn10completionyAC0B8PositionO_So17OS_dispatch_queueCyAC11SetupResultOctF",
+            "mangledName": "$s16StripeCameraCore0B7SessionC06toggleB02to10completeOn10completionyAC0B8PositionO_So17OS_dispatch_queueCyAC11SetupResultOctF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleTorch",
+            "printedName": "toggleTorch()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B7SessionC11toggleTorchyyF",
+            "mangledName": "$s16StripeCameraCore0B7SessionC11toggleTorchyyF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startSession",
+            "printedName": "startSession(completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B7SessionC05startD010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "mangledName": "$s16StripeCameraCore0B7SessionC05startD010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopSession",
+            "printedName": "stopSession(completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore0B7SessionC04stopD010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "mangledName": "$s16StripeCameraCore0B7SessionC04stopD010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16StripeCameraCore0B7SessionC",
+        "mangledName": "$s16StripeCameraCore0B7SessionC",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CameraSessionProtocol",
+            "printedName": "CameraSessionProtocol",
+            "usr": "s:16StripeCameraCore0B15SessionProtocolP",
+            "mangledName": "$s16StripeCameraCore0B15SessionProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "Import",
+        "name": "StripeCore",
+        "printedName": "StripeCore",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MockSimulatorCameraSession",
+        "printedName": "MockSimulatorCameraSession",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "previewView",
+            "printedName": "previewView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "StripeCameraCore.CameraPreviewView?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC11previewViewAA0b7PreviewH0CSgvp",
+            "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC11previewViewAA0b7PreviewH0CSgvp",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "spi_group_names": [
+              "STP"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "StripeCameraCore.CameraPreviewView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPreviewView",
+                        "printedName": "StripeCameraCore.CameraPreviewView",
+                        "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC11previewViewAA0b7PreviewH0CSgvg",
+                "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC11previewViewAA0b7PreviewH0CSgvg",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "StripeCameraCore.CameraPreviewView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPreviewView",
+                        "printedName": "StripeCameraCore.CameraPreviewView",
+                        "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC11previewViewAA0b7PreviewH0CSgvs",
+                "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC11previewViewAA0b7PreviewH0CSgvs",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC11previewViewAA0b7PreviewH0CSgvM",
+                "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC11previewViewAA0b7PreviewH0CSgvM",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(images:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MockSimulatorCameraSession",
+                "printedName": "StripeCameraCore.MockSimulatorCameraSession",
+                "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UIKit.UIImage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC6imagesACSaySo7UIImageCG_tcfc",
+            "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC6imagesACSaySo7UIImageCG_tcfc",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "configureSession",
+            "printedName": "configureSession(configuration:delegate:completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "StripeCameraCore.CameraSession.Configuration",
+                "usr": "s:16StripeCameraCore0B7SessionC13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureVideoDataOutputSampleBufferDelegate",
+                "printedName": "AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate",
+                "usr": "c:objc(pl)AVCaptureVideoDataOutputSampleBufferDelegate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCameraCore.CameraSession.SetupResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SetupResult",
+                    "printedName": "StripeCameraCore.CameraSession.SetupResult",
+                    "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC09configureF013configuration8delegate10completeOn10completionyAA0bF0C13ConfigurationV_So44AVCaptureVideoDataOutputSampleBufferDelegate_pSo17OS_dispatch_queueCyAJ11SetupResultOctF",
+            "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC09configureF013configuration8delegate10completeOn10completionyAA0bF0C13ConfigurationV_So44AVCaptureVideoDataOutputSampleBufferDelegate_pSo17OS_dispatch_queueCyAJ11SetupResultOctF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVideoOrientation",
+            "printedName": "setVideoOrientation(orientation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureVideoOrientation",
+                "printedName": "AVFoundation.AVCaptureVideoOrientation",
+                "usr": "c:@E@AVCaptureVideoOrientation"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC19setVideoOrientation11orientationySo09AVCapturehI0V_tF",
+            "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC19setVideoOrientation11orientationySo09AVCapturehI0V_tF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleCamera",
+            "printedName": "toggleCamera(to:completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraPosition",
+                "printedName": "StripeCameraCore.CameraSession.CameraPosition",
+                "usr": "s:16StripeCameraCore0B7SessionC0B8PositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StripeCameraCore.CameraSession.SetupResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SetupResult",
+                    "printedName": "StripeCameraCore.CameraSession.SetupResult",
+                    "usr": "s:16StripeCameraCore0B7SessionC11SetupResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC06toggleB02to10completeOn10completionyAA0bF0C0B8PositionO_So17OS_dispatch_queueCyAI11SetupResultOctF",
+            "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC06toggleB02to10completeOn10completionyAA0bF0C0B8PositionO_So17OS_dispatch_queueCyAI11SetupResultOctF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCameraProperties",
+            "printedName": "getCameraProperties()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "StripeCameraCore.CameraSession.DeviceProperties?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceProperties",
+                    "printedName": "StripeCameraCore.CameraSession.DeviceProperties",
+                    "usr": "s:16StripeCameraCore0B7SessionC16DevicePropertiesV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC03getB10PropertiesAA0bF0C06DeviceH0VSgyF",
+            "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC03getB10PropertiesAA0bF0C06DeviceH0VSgyF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleTorch",
+            "printedName": "toggleTorch()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC11toggleTorchyyF",
+            "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC11toggleTorchyyF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startSession",
+            "printedName": "startSession(completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC05startF010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC05startF010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopSession",
+            "printedName": "stopSession(completeOn:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC04stopF010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC04stopF010completeOn10completionySo17OS_dispatch_queueC_yyctF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16StripeCameraCore013MockSimulatorB7SessionC",
+        "mangledName": "$s16StripeCameraCore013MockSimulatorB7SessionC",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CameraSessionProtocol",
+            "printedName": "CameraSessionProtocol",
+            "usr": "s:16StripeCameraCore0B15SessionProtocolP",
+            "mangledName": "$s16StripeCameraCore0B15SessionProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StripeCameraCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraPreviewView",
+        "printedName": "CameraPreviewView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "session",
+            "printedName": "session",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "StripeCameraCore.CameraSessionProtocol?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16StripeCameraCore0B11PreviewViewC7sessionAA0B15SessionProtocol_pSgvp",
+            "mangledName": "$s16StripeCameraCore0B11PreviewViewC7sessionAA0B15SessionProtocol_pSgvp",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "spi_group_names": [
+              "STP"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "StripeCameraCore.CameraSessionProtocol?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraSessionProtocol",
+                        "printedName": "StripeCameraCore.CameraSessionProtocol",
+                        "usr": "s:16StripeCameraCore0B15SessionProtocolP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B11PreviewViewC7sessionAA0B15SessionProtocol_pSgvg",
+                "mangledName": "$s16StripeCameraCore0B11PreviewViewC7sessionAA0B15SessionProtocol_pSgvg",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "StripeCameraCore.CameraSessionProtocol?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraSessionProtocol",
+                        "printedName": "StripeCameraCore.CameraSessionProtocol",
+                        "usr": "s:16StripeCameraCore0B15SessionProtocolP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B11PreviewViewC7sessionAA0B15SessionProtocol_pSgvs",
+                "mangledName": "$s16StripeCameraCore0B11PreviewViewC7sessionAA0B15SessionProtocol_pSgvs",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16StripeCameraCore0B11PreviewViewC7sessionAA0B15SessionProtocol_pSgvM",
+                "mangledName": "$s16StripeCameraCore0B11PreviewViewC7sessionAA0B15SessionProtocol_pSgvM",
+                "moduleName": "StripeCameraCore",
+                "implicit": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraPreviewView",
+                "printedName": "StripeCameraCore.CameraPreviewView",
+                "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView(im)init",
+            "mangledName": "$s16StripeCameraCore0B11PreviewViewCACycfc",
+            "moduleName": "StripeCameraCore",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "layerClass",
+            "printedName": "layerClass",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "AnyObject.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "AnyObject"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView(cpy)layerClass",
+            "mangledName": "$s16StripeCameraCore0B11PreviewViewC10layerClassyXlXpvpZ",
+            "moduleName": "StripeCameraCore",
+            "static": true,
+            "overriding": true,
+            "objc_name": "layerClass",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExistentialMetatype",
+                    "printedName": "AnyObject.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "AnyObject"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView(cm)layerClass",
+                "mangledName": "$s16StripeCameraCore0B11PreviewViewC10layerClassyXlXpvgZ",
+                "moduleName": "StripeCameraCore",
+                "static": true,
+                "overriding": true,
+                "objc_name": "layerClass",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraPreviewView",
+                "printedName": "StripeCameraCore.CameraPreviewView",
+                "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView(im)initWithFrame:",
+            "mangledName": "$s16StripeCameraCore0B11PreviewViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "StripeCameraCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "spi_group_names": [
+              "STP"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@StripeCameraCore@objc(cs)CameraPreviewView",
+        "mangledName": "$s16StripeCameraCore0B11PreviewViewC",
+        "moduleName": "StripeCameraCore",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "SPIAccessControl",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "STP"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CGRect",
+        "printedName": "CGRect",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "normalizedBounds",
+            "printedName": "normalizedBounds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So6CGRectV16StripeCameraCoreE16normalizedBoundsABvpZ",
+            "mangledName": "$sSo6CGRectV16StripeCameraCoreE16normalizedBoundsABvpZ",
+            "moduleName": "StripeCameraCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6CGRectV16StripeCameraCoreE16normalizedBoundsABvgZ",
+                "mangledName": "$sSo6CGRectV16StripeCameraCoreE16normalizedBoundsABvgZ",
+                "moduleName": "StripeCameraCore",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invertedNormalizedCoordinates",
+            "printedName": "invertedNormalizedCoordinates",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So6CGRectV16StripeCameraCoreE29invertedNormalizedCoordinatesABvp",
+            "mangledName": "$sSo6CGRectV16StripeCameraCoreE29invertedNormalizedCoordinatesABvp",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6CGRectV16StripeCameraCoreE29invertedNormalizedCoordinatesABvg",
+                "mangledName": "$sSo6CGRectV16StripeCameraCoreE29invertedNormalizedCoordinatesABvg",
+                "moduleName": "StripeCameraCore",
+                "isFromExtension": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "convertFromNormalizedCenterCropSquare",
+            "printedName": "convertFromNormalizedCenterCropSquare(toOriginalSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6CGRectV16StripeCameraCoreE37convertFromNormalizedCenterCropSquare14toOriginalSizeABSo6CGSizeV_tF",
+            "mangledName": "$sSo6CGRectV16StripeCameraCoreE37convertFromNormalizedCenterCropSquare14toOriginalSizeABSo6CGSizeV_tF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "c:@S@CGRect",
+        "moduleName": "CoreFoundation",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSValue",
+                    "printedName": "Foundation.NSValue",
+                    "usr": "c:objc(cs)NSValue"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CVBuffer",
+        "printedName": "CVBuffer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "cgImage",
+            "printedName": "cgImage()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGImage",
+                    "printedName": "CoreGraphics.CGImage",
+                    "usr": "c:@T@CGImageRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So11CVBufferRefa16StripeCameraCoreE7cgImageSo07CGImageB0aSgyF",
+            "mangledName": "$sSo11CVBufferRefa16StripeCameraCoreE7cgImageSo07CGImageB0aSgyF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@T@CVBufferRef",
+        "moduleName": "CoreVideo",
+        "declAttributes": [
+          "SynthesizedProtocol",
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_CFObject",
+            "printedName": "_CFObject",
+            "usr": "s:14CoreFoundation9_CFObjectP",
+            "mangledName": "$s14CoreFoundation9_CFObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CMAttachmentBearerProtocol",
+            "printedName": "CMAttachmentBearerProtocol",
+            "usr": "s:9CoreMedia26CMAttachmentBearerProtocolP",
+            "mangledName": "$s9CoreMedia26CMAttachmentBearerProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIDeviceOrientation",
+        "printedName": "UIDeviceOrientation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "videoOrientation",
+            "printedName": "videoOrientation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureVideoOrientation",
+                "printedName": "AVFoundation.AVCaptureVideoOrientation",
+                "usr": "c:@E@AVCaptureVideoOrientation"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So19UIDeviceOrientationV16StripeCameraCoreE05videoB0So014AVCaptureVideoB0Vvp",
+            "mangledName": "$sSo19UIDeviceOrientationV16StripeCameraCoreE05videoB0So014AVCaptureVideoB0Vvp",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVCaptureVideoOrientation",
+                    "printedName": "AVFoundation.AVCaptureVideoOrientation",
+                    "usr": "c:@E@AVCaptureVideoOrientation"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So19UIDeviceOrientationV16StripeCameraCoreE05videoB0So014AVCaptureVideoB0Vvg",
+                "mangledName": "$sSo19UIDeviceOrientationV16StripeCameraCoreE05videoB0So014AVCaptureVideoB0Vvg",
+                "moduleName": "StripeCameraCore",
+                "isFromExtension": true,
+                "spi_group_names": [
+                  "STP"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@E@UIDeviceOrientation",
+        "moduleName": "UIKit",
+        "objc_name": "UIDeviceOrientation",
+        "declAttributes": [
+          "SynthesizedProtocol",
+          "ObjC",
+          "SynthesizedProtocol",
+          "Sendable",
+          "NonSendable",
+          "Dynamic"
+        ],
+        "enumRawTypeName": "Int",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIImage",
+        "printedName": "UIImage",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "convertToPixelBuffer",
+            "printedName": "convertToPixelBuffer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreVideo.CVBuffer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CVBuffer",
+                    "printedName": "CoreVideo.CVBuffer",
+                    "usr": "c:@T@CVBufferRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7UIImageC16StripeCameraCoreE20convertToPixelBufferSo11CVBufferRefaSgyF",
+            "mangledName": "$sSo7UIImageC16StripeCameraCoreE20convertToPixelBufferSo11CVBufferRefaSgyF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertToSampleBuffer",
+            "printedName": "convertToSampleBuffer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreMedia.CMSampleBuffer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMSampleBuffer",
+                    "printedName": "CoreMedia.CMSampleBuffer",
+                    "usr": "c:@T@CMSampleBufferRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7UIImageC16StripeCameraCoreE21convertToSampleBufferSo08CMSampleH3RefaSgyF",
+            "mangledName": "$sSo7UIImageC16StripeCameraCoreE21convertToSampleBufferSo08CMSampleH3RefaSgyF",
+            "moduleName": "StripeCameraCore",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "STP"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIImage",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIImage",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByImageLiteral",
+            "printedName": "_ExpressibleByImageLiteral",
+            "usr": "s:s26_ExpressibleByImageLiteralP",
+            "mangledName": "$ss26_ExpressibleByImageLiteralP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Categories\/CGRect+StripeCameraCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 378,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Categories\/CGRect+StripeCameraCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 384,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Categories\/CGRect+StripeCameraCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 394,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Categories\/CGRect+StripeCameraCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 405,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Coordinators\/CameraSession.swift",
+      "kind": "Dictionary",
+      "offset": 3578,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Coordinators\/CameraSession.swift",
+      "kind": "StringLiteral",
+      "offset": 4836,
+      "length": 27,
+      "value": "\"com.stripe.camera-session\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Coordinators\/MockSimulatorCameraSession.swift",
+      "kind": "FloatLiteral",
+      "offset": 703,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Coordinators\/MockSimulatorCameraSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 783,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Coordinators\/MockSimulatorCameraSession.swift",
+      "kind": "StringLiteral",
+      "offset": 876,
+      "length": 42,
+      "value": "\"com.stripe.mock-simulator-camera-session\""
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Coordinators\/MockSimulatorCameraSession.swift",
+      "kind": "Array",
+      "offset": 1059,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Coordinators\/MockSimulatorCameraSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1281,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidestes\/stripe\/stripe-ios\/StripeCameraCore\/StripeCameraCore\/Source\/Views\/CameraPreviewView.swift",
+      "kind": "StringLiteral",
+      "offset": 213,
+      "length": 17,
+      "value": "\"StripeCameraCore.CameraPreviewView\""
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "StripePaymentSheet",
+        "printedName": "StripePaymentSheet",
+        "declKind": "Import",
+        "moduleName": "TiStripe",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TitaniumKit",
+        "printedName": "TitaniumKit",
+        "declKind": "Import",
+        "moduleName": "TiStripe"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "TiStripe"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TiStripe"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 356,
+      "length": 38,
+      "value": "\"8a8da6b4-4dab-4c18-9439-de2e14457a1c\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 579,
+      "length": 16,
+      "value": "\"publishableKey\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 834,
+      "length": 50,
+      "value": "\"Missing parameters when calling showPaymentSheet\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 919,
+      "length": 10,
+      "value": "\"callback\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 986,
+      "length": 21,
+      "value": "\"merchantDisplayName\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 1048,
+      "length": 12,
+      "value": "\"customerId\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 1117,
+      "length": 28,
+      "value": "\"customerEphemeralKeySecret\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 1201,
+      "length": 27,
+      "value": "\"paymentIntentClientSecret\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 1269,
+      "length": 12,
+      "value": "\"appearance\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 1423,
+      "length": 118,
+      "value": "\"[ERROR] Missing required parameters \"customerId\", \"customerEphemeralKeySecret\" and \"paymentIntentClientSecret\"\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1981,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "Dictionary",
+      "offset": 2273,
+      "length": 34,
+      "value": "[(\"success\", true), (\"cancel\", false)]"
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "Dictionary",
+      "offset": 2373,
+      "length": 34,
+      "value": "[(\"success\", false), (\"cancel\", true)]"
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 2483,
+      "length": 9,
+      "value": "\"success\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2494,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 2501,
+      "length": 8,
+      "value": "\"cancel\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2511,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 2518,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 2781,
+      "length": 8,
+      "value": "\"colors\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 2844,
+      "length": 12,
+      "value": "\"background\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 2971,
+      "length": 6,
+      "value": "\"text\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3089,
+      "length": 15,
+      "value": "\"textSecondary\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3228,
+      "length": 9,
+      "value": "\"primary\""
+    },
+    {
+      "filePath": "\/Users\/hans\/Documents\/dev\/titanium-stripe\/ios\/Classes\/TiStripeModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3355,
+      "length": 6,
+      "value": "\"font\""
+    }
+  ]
+}
