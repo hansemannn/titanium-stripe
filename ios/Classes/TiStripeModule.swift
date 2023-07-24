@@ -92,6 +92,18 @@ class TiStripeModule: TiModule {
       }
     }
     
+    if let primaryButton = params["primaryButton"] as? [String: Any] {
+      if let borderRadius = primaryButton["borderRadius"] as? Float {
+        appearance.primaryButton.cornerRadius = CGFloat(borderRadius)
+      }
+      if let borderWidth = primaryButton["borderWidth"] as? Float {
+        appearance.primaryButton.borderWidth = CGFloat(borderWidth)
+      }
+      if let borderColor = primaryButton["borderColor"] as? Float {
+        appearance.primaryButton.borderColor = TiUtils.colorValue(borderColor).color
+      }
+    }
+    
     if let font = params["font"] {
       appearance.font.base = TiUtils.fontValue(font).font()
     }
