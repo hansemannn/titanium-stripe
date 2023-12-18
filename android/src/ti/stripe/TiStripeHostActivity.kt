@@ -35,15 +35,27 @@ class TiStripeHostActivity : ComponentActivity() {
         val customerEphemeralKeySecret: String = params["customerEphemeralKeySecret"] as String
         val paymentIntentClientSecret: String = params["paymentIntentClientSecret"] as String
         val appearance: HashMap<*, *>? = params["appearance"] as? HashMap<*, *>
+        val merchantCountryCode: String = params["merchantCountryCode"] as String
+        val googlePayTest: Boolean? = params["googlePayTest"] as? Boolean
 
         val customerConfig = PaymentSheet.CustomerConfiguration(
             customerId,
             customerEphemeralKeySecret
         )
 
+        val googlePayConfiguration = PaymentSheet.GooglePayConfiguration(
+            environment = when (googlePayTest) {
+                true -> PaymentSheet.GooglePayConfiguration.Environment.Test
+                false -> PaymentSheet.GooglePayConfiguration.Environment.Production
+                null -> PaymentSheet.GooglePayConfiguration.Environment.Production
+            },
+            countryCode = merchantCountryCode
+        )
+
         val configuration = PaymentSheet.Configuration.Builder(merchantDisplayName)
             .customer(customerConfig)
             .allowsDelayedPaymentMethods(true)
+            .googlePay(googlePayConfiguration)
 
         appearance?.let {
             configuration.appearance(mappedAppearance(it))

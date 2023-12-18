@@ -31,6 +31,9 @@ function action() {
         customerEphemeralKeySecret: credentials.ephemeralKey,
         paymentIntentClientSecret: credentials.paymentIntent,
         customerId: credentials.customer,
+        merchantId: credentials.merchantId, // For Apple Pay Support 
+        merchantCountryCode: credentials.merchantCountryCode, // For Apple / Google Pay Support 
+        googlePayTest:response['stripe_info']['googlePayTest'], // For Google Pay Support, set to True for test environment
         // appearance: {
         //     font: {
         //         fontFamily: 'PT Mono',
