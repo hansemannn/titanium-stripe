@@ -41,6 +41,8 @@ class TiStripeModule: TiModule {
     let customerEphemeralKeySecret = params["customerEphemeralKeySecret"] as? String
     let paymentIntentClientSecret = params["paymentIntentClientSecret"] as? String
     let appearance = params["appearance"] as? [String: Any]
+    let merchantId = params["merchantId"] as? String
+    let merchantCountryCode = params["merchantCountryCode"] as? String
 
     guard let customerId, let customerEphemeralKeySecret, let paymentIntentClientSecret, let callback else {
       NSLog("[ERROR] Missing required parameters \"customerId\", \"customerEphemeralKeySecret\" and \"paymentIntentClientSecret\"")
@@ -55,6 +57,13 @@ class TiStripeModule: TiModule {
     
     if let merchantDisplayName {
       configuration.merchantDisplayName = merchantDisplayName
+    }
+
+    if let merchantId {
+      configuration.applePay = .init(
+        merchantId: merchantId,
+        merchantCountryCode: (merchantCountryCode ?? "US")
+      )
     }
     
     configuration.customer = .init(id: customerId, ephemeralKeySecret: customerEphemeralKeySecret)
