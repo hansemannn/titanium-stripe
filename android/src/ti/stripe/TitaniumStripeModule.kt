@@ -41,10 +41,10 @@ class TitaniumStripeModule : KrollModule(), TiActivityResultHandler {
         val customerEphemeralKeySecret = params.getString("customerEphemeralKeySecret")
         val paymentIntentClientSecret = params.getString("paymentIntentClientSecret")
 
-        if (callback == null || merchantDisplayName == null || customerId == null || customerEphemeralKeySecret == null || paymentIntentClientSecret == null) {
+        if (callback == null || merchantDisplayName == null || customerId == null || paymentIntentClientSecret == null) {
             Log.e(
                 "TiStripe",
-                "Missing required parameters: callback, customerId, customerEphemeralKeySecret or paymentIntentClientSecret"
+                "Missing required parameters: callback, customerId or paymentIntentClientSecret"
             )
             return
         }

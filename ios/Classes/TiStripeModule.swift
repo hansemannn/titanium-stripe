@@ -29,60 +29,87 @@ class TiStripeModule: TiModule {
     STPAPIClient.shared.publishableKey = publishableKey
   }
   
-  @objc(showPaymentSheet:)
-  func showPaymentSheet(args: [Any]) {
-    guard let params = args.first as? [String: Any] else {
-      fatalError("Missing parameters when calling showPaymentSheet")
-    }
+    @objc(showPaymentSheet:)
+    func showPaymentSheet(args: [Any]) {
+      guard let params = args.first as? [String: Any] else {
+        NSLog("[ERROR] Missing parameters when calling showPaymentSheet")
+        return
+      }
 
-    let callback = params["callback"] as? KrollCallback
-    let merchantDisplayName = params["merchantDisplayName"] as? String
-    let customerId = params["customerId"] as? String
-    let customerEphemeralKeySecret = params["customerEphemeralKeySecret"] as? String
-    let paymentIntentClientSecret = params["paymentIntentClientSecret"] as? String
-    let appearance = params["appearance"] as? [String: Any]
-    let merchantId = params["merchantId"] as? String
-    let merchantCountryCode = params["merchantCountryCode"] as? String
+      let callback = params["callback"] as? KrollCallback
+      let merchantDisplayName = params["merchantDisplayName"] as? String
+      let paymentIntentClientSecret = params["paymentIntentClientSecret"] as? String
 
-    guard let customerId, let customerEphemeralKeySecret, let paymentIntentClientSecret, let callback else {
-      NSLog("[ERROR] Missing required parameters \"customerId\", \"customerEphemeralKeySecret\" and \"paymentIntentClientSecret\"")
-      return
-    }
-    
-    var configuration = PaymentSheet.Configuration()
-    
-    if let appearance {
-      configuration.appearance = mappedAppearance(appearance);
-    }
-    
-    if let merchantDisplayName {
-      configuration.merchantDisplayName = merchantDisplayName
-    }
+      // Optional (only if you want saved PMs / returning customers)
+      let customerId = params["customerId"] as? String
+      let customerEphemeralKeySecret = params["customerEphemeralKeySecret"] as? String
 
-    if let merchantId {
-      configuration.applePay = .init(
-        merchantId: merchantId,
-        merchantCountryCode: (merchantCountryCode ?? "US")
+      // Optional Apple Pay
+      let merchantId = params["merchantId"] as? String
+      let merchantCountryCode = params["merchantCountryCode"] as? String
+
+      guard let callback else {
+        NSLog("[ERROR] Missing required parameter \"callback\"")
+        return
+      }
+      guard let paymentIntentClientSecret else {
+        NSLog("[ERROR] Missing required parameter \"paymentIntentClientSecret\"")
+        callback.call([["success": false, "error": "Missing paymentIntentClientSecret"]], thisObject: self)
+        return
+      }
+
+      var configuration = PaymentSheet.Configuration()
+
+      // Appearance (optional)
+      if let appearanceDict = params["appearance"] as? [String: Any] {
+        configuration.appearance = mappedAppearance(appearanceDict)
+      }
+
+      if let merchantDisplayName {
+        configuration.merchantDisplayName = merchantDisplayName
+      }
+
+      // Apple Pay (optional)
+      if let merchantId {
+        configuration.applePay = .init(
+          merchantId: merchantId,
+          merchantCountryCode: merchantCountryCode ?? "US"
+        )
+      }
+
+      // Customer (optional) — only set if both values exist
+      if let customerId, let customerEphemeralKeySecret {
+        configuration.customer = .init(id: customerId, ephemeralKeySecret: customerEphemeralKeySecret)
+      }
+
+      configuration.allowsDelayedPaymentMethods = true
+
+      // Create and present the sheet (guest or customer — both use the same initializer)
+      self.paymentSheet = PaymentSheet(
+        paymentIntentClientSecret: paymentIntentClientSecret,
+        configuration: configuration
       )
-    }
-    
-    configuration.customer = .init(id: customerId, ephemeralKeySecret: customerEphemeralKeySecret)
-    
-    configuration.allowsDelayedPaymentMethods = true
-    self.paymentSheet = PaymentSheet(paymentIntentClientSecret: paymentIntentClientSecret, configuration: configuration)
-    
-    self.paymentSheet.present(from: TiApp.controller().topPresentedController()) { result in
-      switch result {
-      case .completed:
-        callback.call([["success": true]], thisObject: self)
-      case .canceled:
-        callback.call([["cancel": true]], thisObject: self)
-      case .failed(let error):
-        callback.call([["success": false, "error": error.localizedDescription] as [String : Any]], thisObject: self)
+
+      DispatchQueue.main.async {
+        self.paymentSheet.present(from: TiApp.controller().topPresentedController()) { result in
+          switch result {
+          case .completed:
+            callback.call([["success": true]], thisObject: self)
+          case .canceled:
+            callback.call([["cancel": true]], thisObject: self)
+          case .failed(let error):
+            callback.call([["success": false, "error": error.localizedDescription]], thisObject: self)
+          }
+        }
       }
     }
-  }
+
+    @objc(isApplePaySupported:)
+    func isApplePaySupported(args: [Any]) -> Bool {
+        return PKPaymentAuthorizationController.canMakePayments()
+    }
   
+    
   private func mappedAppearance(_ params: [String: Any]) -> PaymentSheet.Appearance {
     var appearance = PaymentSheet.Appearance()
     
@@ -101,17 +128,18 @@ class TiStripeModule: TiModule {
       }
     }
     
-    if let primaryButton = params["primaryButton"] as? [String: Any] {
-      if let borderRadius = primaryButton["borderRadius"] as? Float {
-        appearance.primaryButton.cornerRadius = CGFloat(borderRadius)
+      if let primaryButton = params["primaryButton"] as? [String: Any] {
+        if let borderRadius = primaryButton["borderRadius"] as? CGFloat {
+          appearance.primaryButton.cornerRadius = borderRadius
+        }
+        if let borderWidth = primaryButton["borderWidth"] as? CGFloat {
+          appearance.primaryButton.borderWidth = borderWidth
+        }
+        if let borderColor = primaryButton["borderColor"] {
+          appearance.primaryButton.borderColor = TiUtils.colorValue(borderColor).color
+        }
       }
-      if let borderWidth = primaryButton["borderWidth"] as? Float {
-        appearance.primaryButton.borderWidth = CGFloat(borderWidth)
-      }
-      if let borderColor = primaryButton["borderColor"] as? Float {
-        appearance.primaryButton.borderColor = TiUtils.colorValue(borderColor).color
-      }
-    }
+
     
     if let font = params["font"] {
       appearance.font.base = TiUtils.fontValue(font).font()

@@ -30,40 +30,45 @@ class TiStripeHostActivity : ComponentActivity() {
 
         paymentSheet = PaymentSheet(this, ::onPaymentSheetResult)
 
-        val merchantDisplayName: String = params["merchantDisplayName"] as String
-        val customerId: String = params["customerId"] as String
-        val customerEphemeralKeySecret: String = params["customerEphemeralKeySecret"] as String
-        val paymentIntentClientSecret: String = params["paymentIntentClientSecret"] as String
-        val appearance: HashMap<*, *>? = params["appearance"] as? HashMap<*, *>
-        val merchantCountryCode: String = params["merchantCountryCode"] as String
-        val googlePayTest: Boolean? = params["googlePayTest"] as? Boolean
+        val customerId = params["customerId"] as? String
+        val customerEphemeralKeySecret = params["customerEphemeralKeySecret"] as? String
+        val appearance = params["appearance"] as? HashMap<*, *>
+        val merchantCountryCode = params["merchantCountryCode"] as? String
+        val googlePayTest = params["googlePayTest"] as? Boolean ?: false
+        val merchantDisplayName = (params["merchantDisplayName"] as? String) ?: "Your Store"
+        val paymentIntentClientSecret = params["paymentIntentClientSecret"] as String
+        val googlePayCurrencyCode = params["googlePayCurrencyCode"] as? String
+        val builder = PaymentSheet.Configuration.Builder(merchantDisplayName)
+        .allowsDelayedPaymentMethods(true)
 
-        val customerConfig = PaymentSheet.CustomerConfiguration(
-            customerId,
-            customerEphemeralKeySecret
-        )
-
-        val googlePayConfiguration = PaymentSheet.GooglePayConfiguration(
-            environment = when (googlePayTest) {
-                true -> PaymentSheet.GooglePayConfiguration.Environment.Test
-                false -> PaymentSheet.GooglePayConfiguration.Environment.Production
-                null -> PaymentSheet.GooglePayConfiguration.Environment.Production
-            },
-            countryCode = merchantCountryCode
-        )
-
-        val configuration = PaymentSheet.Configuration.Builder(merchantDisplayName)
-            .customer(customerConfig)
-            .allowsDelayedPaymentMethods(true)
-            .googlePay(googlePayConfiguration)
-
-        appearance?.let {
-            configuration.appearance(mappedAppearance(it))
+        // Customer is OPTIONAL (only when both are present)
+        if (!customerId.isNullOrBlank() && !customerEphemeralKeySecret.isNullOrBlank()) {
+            builder.customer(
+                PaymentSheet.CustomerConfiguration(
+                    customerId,
+                    customerEphemeralKeySecret
+                )
+            )
         }
+
+        // Google Pay is OPTIONAL – only set when you have a country code
+        if (!merchantCountryCode.isNullOrBlank() && !googlePayCurrencyCode.isNullOrBlank()) {
+            builder.googlePay(
+                PaymentSheet.GooglePayConfiguration(
+                    environment = if (googlePayTest)
+                        PaymentSheet.GooglePayConfiguration.Environment.Test
+                    else
+                        PaymentSheet.GooglePayConfiguration.Environment.Production,
+                    countryCode = merchantCountryCode
+                )
+            )
+        }
+
+        appearance?.let { builder.appearance(mappedAppearance(it)) }
 
         paymentSheet.presentWithPaymentIntent(
             paymentIntentClientSecret,
-            configuration.build()
+            builder.build()
         )
     }
 
