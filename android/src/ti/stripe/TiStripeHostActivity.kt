@@ -37,7 +37,7 @@ class TiStripeHostActivity : ComponentActivity() {
         val appearance: HashMap<*, *>? = params["appearance"] as? HashMap<*, *>
         val merchantCountryCode: String = params["merchantCountryCode"] as String
         val googlePayTest: Boolean? = params["googlePayTest"] as? Boolean
-        val intentType: String = (params["intentType"] as? String) ?: "payment"
+        val intentType: String = params["intentType"] as? String ?: "payment"
 
         val customerConfig = PaymentSheet.CustomerConfiguration(
             customerId,
