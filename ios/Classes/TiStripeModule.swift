@@ -43,6 +43,7 @@ class TiStripeModule: TiModule {
     let appearance = params["appearance"] as? [String: Any]
     let merchantId = params["merchantId"] as? String
     let merchantCountryCode = params["merchantCountryCode"] as? String
+    let intentType = params["intentType"] as? String ?? "payment"
 
     guard let customerId, let customerEphemeralKeySecret, let paymentIntentClientSecret, let callback else {
       NSLog("[ERROR] Missing required parameters \"customerId\", \"customerEphemeralKeySecret\" and \"paymentIntentClientSecret\"")
@@ -69,7 +70,12 @@ class TiStripeModule: TiModule {
     configuration.customer = .init(id: customerId, ephemeralKeySecret: customerEphemeralKeySecret)
     
     configuration.allowsDelayedPaymentMethods = true
-    self.paymentSheet = PaymentSheet(paymentIntentClientSecret: paymentIntentClientSecret, configuration: configuration)
+
+    if intentType == "setup" {
+      self.paymentSheet = PaymentSheet(setupIntentClientSecret: paymentIntentClientSecret, configuration: configuration)
+    } else {
+      self.paymentSheet = PaymentSheet(paymentIntentClientSecret: paymentIntentClientSecret, configuration: configuration)
+    }
     
     self.paymentSheet.present(from: TiApp.controller().topPresentedController()) { result in
       switch result {
